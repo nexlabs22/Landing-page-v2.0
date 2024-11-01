@@ -30,7 +30,7 @@ const HeroCard1 = () => {
                 right: '-30%',
                 bottom: '-20%',
                 zIndex: 2
-            }}></Image>
+            }} />
         </CustomCard>
     )
 }

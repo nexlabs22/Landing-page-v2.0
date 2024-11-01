@@ -24,7 +24,7 @@ const ChartCard: React.FC<ChartCardProps> = ({ product }) => {
             <Stack height={'100%'} width={'100%'} direction={'column'} alignItems={'start'} justifyContent={'space-between'}>
                 <Stack width={'100%'} direction={'row'} alignItems={'center'} justifyContent={'space-between'}>
                     <Stack direction={'row'} alignItems={'center'} justifyContent={'start'} gap={1}>
-                        <Image src={product == 'ANFI' ? ANFILogo : product == 'CR5' ? CR5Logo : product == 'MAG7' ? MAG7Logo : ARBEILogo} alt="nex labs nexlabs ANFI index anti inflation" height={50} width={50}></Image>
+                        <Image src={product == 'ANFI' ? ANFILogo : product == 'CR5' ? CR5Logo : product == 'MAG7' ? MAG7Logo : ARBEILogo} alt="nex labs nexlabs ANFI index anti inflation" height={50} width={50} />
                         <Stack direction={'column'}>
                             <Typography variant="subtitle1" sx={{ fontWeight: 700 }}>
                                 {product.toUpperCase()}

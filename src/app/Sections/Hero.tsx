@@ -11,7 +11,7 @@ const HeroSection = () => {
         <Box width={'100%'} height={'100vh'} position={'relative'} >
             <HeroShadows />
             <Navbar />
-            <Stack width={'100%'} height={'90%'} position={'relative'} zIndex={3} marginX={'auto'} marginTop={2} padding={3} direction={'row'} alignItems={'center'} gap={2}>
+            <Stack width={'100%'} height={'88%'} position={'relative'} zIndex={3} marginX={'auto'} marginTop={2} padding={3} direction={'row'} alignItems={'center'} gap={2}>
                 <Box display={'flex'} width={'35%'} height={'100%'}>
                     <HeroCard1 />
                 </Box>
