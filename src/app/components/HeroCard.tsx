@@ -5,7 +5,7 @@ import theme from "../theme/theme";
 
 import shape1 from '@assets/shape1.webp'
 
-const HeroCard1 = () => {
+const HeroCard = () => {
 
     return (
         <CustomCard gradient={`linear-gradient(10.81deg, ${theme.palette.NexCardGradient1_1.main} 8.01%, ${theme.palette.NexCardGradient1_2.main} 96.61%)`} shadow="0px 40px 180px rgba(0, 0, 0, 0.35)" border={`solid 2px ${theme.palette.NexGradientBorder1_2}`}>
@@ -35,4 +35,4 @@ const HeroCard1 = () => {
     )
 }
 
-export default HeroCard1
+export default HeroCard

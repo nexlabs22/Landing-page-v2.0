@@ -1,8 +1,7 @@
 import { Stack } from "@mui/material";
-import { useTheme } from "@mui/material";
+import theme from "src/app/theme/theme";
 
 const OpaqueDot = () => {
-    const theme = useTheme();
     return(
         <Stack width={'.2rem'} borderRadius={'50%'} sx={{
             backgroundColor: theme.palette.NexOpaqueDot.main,

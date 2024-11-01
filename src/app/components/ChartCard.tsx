@@ -13,11 +13,14 @@ import KeyboardDoubleArrowUpIcon from '@mui/icons-material/KeyboardDoubleArrowUp
 import HelpIcon from '@mui/icons-material/Help';
 import CallMadeIcon from '@mui/icons-material/CallMade';
 
+
 interface ChartCardProps {
     product: string;
 }
 
 const ChartCard: React.FC<ChartCardProps> = ({ product }) => {
+
+    
 
     return (
         <CustomCard gradient={`linear-gradient(0deg, ${theme.palette.NexCardGradient3_2.main} 0%, ${theme.palette.NexCardGradient2_2.main} 100%)`} shadow="0px 40px 180px rgba(0, 0, 0, 0.35)" border={`solid 2px ${theme.palette.NexGradientBorder1_2}`}>
@@ -34,7 +37,7 @@ const ChartCard: React.FC<ChartCardProps> = ({ product }) => {
                             </Typography>
                         </Stack>
                     </Stack>
-                    <Chip label='RWA'></Chip>
+                    <Chip label='RWA' />
                 </Stack>
                 <Stack width={'100%'} direction={'row'} alignItems={'center'} justifyContent={'space-between'}>
                     <Paper sx={{
@@ -65,12 +68,9 @@ const ChartCard: React.FC<ChartCardProps> = ({ product }) => {
                     }}>
                         <Typography variant='body1'>Trade</Typography>
                         <CallMadeIcon fontSize="small" color="info" />
-                        
                     </Paper>
                 </Stack>
-
             </Stack>
-
         </CustomCard>
     )
 }
