@@ -1,7 +1,7 @@
 import { Stack, Chip, Typography, Paper } from "@mui/material";
-import CustomCard from "./CustomCard";
+import CustomCard from "@components/CustomCard";
 import Image from "next/image";
-import theme from "../theme/theme";
+import theme from "@theme/theme";
 
 import ANFILogo from '@assets/anfi.webp'
 import CR5Logo from '@assets/cr5.webp'

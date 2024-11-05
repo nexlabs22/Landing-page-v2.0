@@ -1,5 +1,5 @@
 import { Stack, Box, Button } from "@mui/material";
-import theme from "../theme/theme";
+import theme from "@theme/theme";
 
 interface CustomCardProps {
     gradient: string;

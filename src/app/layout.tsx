@@ -2,8 +2,8 @@ import { CssBaseline } from "@mui/material";
 import { type Metadata } from "next";
 import localFont from 'next/font/local';
 import { AppRouterCacheProvider } from '@mui/material-nextjs/v14-appRouter';
-import ThemeWrapper from "./theme/ThemeWrapper";
-import theme from "./theme/theme";
+import ThemeWrapper from "@theme/ThemeWrapper";
+import theme from "@theme/theme";
 
 export const metadata: Metadata = {
   title: "NexLabs - Index your trades, your investment, your future",

@@ -113,6 +113,9 @@ const theme = createTheme({
     h4: {
       fontWeight: 700
     },
+    h5: {
+      fontWeight: 700
+    },
     h6: {
         fontWeight: 500
       }
@@ -173,7 +176,7 @@ const theme = createTheme({
         styleOverrides: `
         *::-webkit-scrollbar {
           width: 0px;
-          height: 0.px;
+          height: 0px;
         }
       `,
       },

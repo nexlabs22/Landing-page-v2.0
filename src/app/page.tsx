@@ -1,7 +1,7 @@
 import { Box, Container } from "@mui/material";
 import HeroBG from "@assets/heroBG";
-import HeroSection from "./Sections/Hero";
-import StatsSection from "./Sections/Stats";
+import HeroSection from "@sections/Hero";
+import StatsSection from "@sections/Stats";
 
 export default function Home() {
   return (

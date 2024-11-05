@@ -1,10 +1,10 @@
 import { Stack, Box } from "@mui/material";
 import Grid from '@mui/material/Grid2';
-import Navbar from "./Navbar";
-import HeroShadows from "../components/HeroShadows";
+import Navbar from "@sections/Navbar";
+import HeroShadows from "@components/HeroShadows";
 
-import HeroCard from "../components/HeroCard";
-import ChartCard from "../components/ChartCard";
+import HeroCard from "@components/HeroCard";
+import ChartCard from "@components/ChartCard";
 
 import { IndicesWithDetails } from "../contants";
 

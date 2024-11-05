@@ -1,7 +1,7 @@
 import { Stack, Button, Typography } from "@mui/material";
-import CustomCard from "./CustomCard";
+import CustomCard from "@components/CustomCard";
 import Image from "next/image";
-import theme from "../theme/theme";
+import theme from "@theme/theme";
 
 import shape1 from '@assets/shape1.webp'
 

@@ -26,11 +26,11 @@
     /* Path Aliases */
     "baseUrl": ".",
     "paths": {
-      "@components/*": ["src/components/*"],
-      "@sections/*": ["src/Sections/*"],
+      "@components/*": ["src/app/components/*"],
+      "@sections/*": ["src/app/Sections/*"],
 			"@assets/*": ["src/assets/*"],
-      "@theme/*": ["src/theme/*"],
-      "@styles/*": ["src/styles/*"],
+      "@theme/*": ["src/app/theme/*"],
+      "@styles/*": ["src/app/styles/*"],
     }
   },
   "include": [
