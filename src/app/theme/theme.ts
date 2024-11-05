@@ -52,7 +52,7 @@ const theme = createTheme({
   palette: {
     text: {
       primary: "#FFFFFF",
-      secondary: "rgba(255, 255, 255, 0.7)",
+      secondary: "#121212",
       disabled: "rgba(255, 255, 255, 0.38)",
     },
     primary: {
@@ -89,7 +89,7 @@ const theme = createTheme({
     NexCardGradient1_2: {main: "#389685"},
     NexGradientBorder1_1: {main: "#2F5844"},
     NexGradientBorder1_2: {main: "#FFFFFF"},
-    NexArbCardGradient1: {main: "rgba(38, 137, 198, 0)"},
+    NexArbCardGradient1: {main: "rgba(38, 137, 198, 0.5)"},
     NexArbCardGradient2: {main: "#121318"},
     NexCardGradient2_1: {main: "#1E1E1E"},
     NexCardGradient2_2: {main: "#252525"},
@@ -117,6 +117,9 @@ const theme = createTheme({
       fontWeight: 700
     },
     h6: {
+        fontWeight: 500
+      },
+      subtitle1: {
         fontWeight: 500
       }
   },
