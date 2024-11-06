@@ -6,7 +6,7 @@ import HeroShadows from "@components/HeroShadows";
 import HeroCard from "@components/HeroCard";
 import ChartCard from "@components/ChartCard";
 
-import { IndicesWithDetails } from "../contants";
+import IndicesWithDetails from "../Indices";
 
 const HeroSection = () => {
     return (
@@ -18,26 +18,13 @@ const HeroSection = () => {
                     <HeroCard />
                 </Box>
                 <Grid container rowSpacing={2} columnSpacing={2} width={'65%'} height={'100%'}>
-                    <Grid size={6}>
-                        <Box display={'flex'} width={'100%'} height={'100%'}>
-                            <ChartCard product="ANFI" />
-                        </Box>
-                    </Grid>
-                    <Grid size={6}>
-                        <Box display={'flex'} width={'100%'} height={'100%'}>
-                            <ChartCard product="CR5" />
-                        </Box>
-                    </Grid>
-                    <Grid size={6}>
-                        <Box display={'flex'} width={'100%'} height={'100%'}>
-                            <ChartCard product="MAG7" />
-                        </Box>
-                    </Grid>
-                    <Grid size={6}>
-                        <Box display={'flex'} width={'100%'} height={'100%'}>
-                            <ChartCard product="ARBEI" />
-                        </Box>
-                    </Grid>
+                    {IndicesWithDetails.map((item, index) => (
+                        <Grid size={6} key={index}>
+                            <Box display={'flex'} width={'100%'} height={'100%'}>
+                                <ChartCard product={item} />
+                            </Box>
+                        </Grid>
+                    ))}
                 </Grid>
 
             </Stack>

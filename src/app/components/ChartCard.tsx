@@ -13,31 +13,46 @@ import KeyboardDoubleArrowUpIcon from '@mui/icons-material/KeyboardDoubleArrowUp
 import HelpIcon from '@mui/icons-material/Help';
 import CallMadeIcon from '@mui/icons-material/CallMade';
 
+interface Index {
+    name: string;
+    logo: string;
+    symbol: string;
+    shortSymbol: string;
+    description: string;
+    mktCap: number;
+    mktPrice: number;
+    chg24h: number;
+    tokenAddress: string;
+    managementFee: string;
+    totalSupply: string;
+    tag: string;
+}
+
 
 interface ChartCardProps {
-    product: string;
+    product: Index;
 }
 
 const ChartCard: React.FC<ChartCardProps> = ({ product }) => {
 
-    
+
 
     return (
         <CustomCard gradient={`linear-gradient(0deg, ${theme.palette.NexCardGradient3_2.main} 0%, ${theme.palette.NexCardGradient2_2.main} 100%)`} shadow="0px 40px 180px rgba(0, 0, 0, 0.35)" border={`solid 2px ${theme.palette.NexGradientBorder1_2}`}>
             <Stack height={'100%'} width={'100%'} direction={'column'} alignItems={'start'} justifyContent={'space-between'}>
                 <Stack width={'100%'} direction={'row'} alignItems={'center'} justifyContent={'space-between'}>
                     <Stack direction={'row'} alignItems={'center'} justifyContent={'start'} gap={1}>
-                        <Image src={product == 'ANFI' ? ANFILogo : product == 'CR5' ? CR5Logo : product == 'MAG7' ? MAG7Logo : ARBEILogo} alt="nex labs nexlabs ANFI index anti inflation" height={50} width={50} />
+                        <Image src={product.logo} alt="nex labs nexlabs ANFI index anti inflation" height={50} width={50} />
                         <Stack direction={'column'}>
                             <Typography variant="subtitle1" sx={{ fontWeight: 700 }}>
-                                {product.toUpperCase()}
+                                {product.symbol.toUpperCase()}
                             </Typography>
                             <Typography variant="subtitle2">
-                                Anti Inflation Index
+                                {product.name}
                             </Typography>
                         </Stack>
                     </Stack>
-                    <Chip label='RWA' />
+                    <Chip label={product.tag} />
                 </Stack>
                 <Stack width={'100%'} direction={'row'} alignItems={'center'} justifyContent={'space-between'}>
                     <Paper sx={{
@@ -48,13 +63,17 @@ const ChartCard: React.FC<ChartCardProps> = ({ product }) => {
                         gap: 2
                     }}>
                         <Stack direction={'row'} alignItems={'center'} justifyContent={'start'}>
-                            <Typography variant='body1' color={theme.palette.error.main}>-9.88</Typography>
-                            <KeyboardDoubleArrowDownIcon fontSize="small" color="error" />
+                            <Typography variant='body1' color={product.chg24h >= 0 ? theme.palette.success.main : theme.palette.error.main}>
+                                {product.chg24h}%
+                            </Typography>
+                            {
+                                product.chg24h >= 0 ? (<KeyboardDoubleArrowUpIcon fontSize="small" color="success" />) : (<KeyboardDoubleArrowDownIcon fontSize="small" color="error" />)
+                            }
                         </Stack>
                         <Stack direction={'row'} alignItems={'center'} justifyContent={'start'} gap={0.5}>
                             <Typography variant='body1'>YTD</Typography>
                             <HelpIcon fontSize="small" color="info" sx={{
-                                scale: '0.75', 
+                                scale: '0.75',
                                 opacity: "0.75"
                             }} />
                         </Stack>

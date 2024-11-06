@@ -4,7 +4,7 @@ import logo from '@assets/logo.webp'
 
 const Navbar = () => {
     return(
-        <Stack width={'100%'} direction={'row'} alignItems={'center'} justifyContent={'space-between'} position={'relative'} zIndex={2}>
+        <Stack width={'100%'} direction={'row'} alignItems={'center'} justifyContent={'space-between'} position={'relative'} zIndex={10}>
                 <Image src={logo} alt="NexLabs Nex Labs logo xlogo" height={40} width={40} style={{
                     filter: 'brightness(0) invert(1)'
                 }} />
