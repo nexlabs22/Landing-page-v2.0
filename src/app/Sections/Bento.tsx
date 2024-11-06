@@ -20,9 +20,7 @@ const BentoSection = () => {
                                 <Typography variant="h5" sx={{
                                     width: '75%'
                                 }}>Nex is building with Chainlink CCIP</Typography>
-                                <Typography variant="subtitle1" sx={{
-                                    width: '95%'
-                                }}>Chainlink's CCIP enhances blockchain interoperability by seamlessly bridging multiple networks. It ensures accurate, tamper-proof data transfer using decentralized oracles, eliminating single points of failure. This makes CCIP a unique and invaluable tool in the blockchain ecosystem.</Typography>
+                                <Typography variant="h6">Chainlink's CCIP enhances blockchain interoperability by seamlessly bridging multiple networks. It ensures accurate, tamper-proof data transfer using decentralized oracles, eliminating single points of failure. This makes CCIP a unique and invaluable tool in the blockchain ecosystem.</Typography>
                             </Stack>
                             <Button variant='outlined' sx={{
                                 background: theme.palette.info.main,
@@ -36,7 +34,7 @@ const BentoSection = () => {
                                 height: '15rem',
                                 width: 'auto',
                                 bottom: '-3.5rem',
-                                right: '-4rem',
+                                right: '-4.5rem',
                                 zIndex: 1
                             }}></Image>
                         </Stack>
@@ -51,9 +49,7 @@ const BentoSection = () => {
                                     <Typography variant="h5" sx={{
                                         width: '75%'
                                     }}>Nex is on Arbitrum</Typography>
-                                    <Typography variant="subtitle1" sx={{
-                                        width: '80%'
-                                    }}>Nex is part of the thriving Arbitrum ecosystem, the leading L2 technology, empowering builders of Ethereum.</Typography>
+                                    <Typography variant="h6">Nex is part of the thriving Arbitrum ecosystem, the leading L2 technology, empowering builders of Ethereum.</Typography>
                                 </Stack>
                                 <Button variant='outlined' sx={{
                                     background: theme.palette.background.default,
@@ -66,7 +62,7 @@ const BentoSection = () => {
                                     position: 'absolute',
                                     height: '12rem',
                                     width: 'auto',
-                                    bottom: '-4.5rem',
+                                    bottom: '-5rem',
                                     right: '-4rem',
                                     zIndex: 1
                                 }}></Image>
@@ -80,9 +76,7 @@ const BentoSection = () => {
                                     <Typography variant="h5" sx={{
                                         width: '75%'
                                     }}>Nex is on Arbitrum</Typography>
-                                    <Typography variant="subtitle1" sx={{
-                                        width: '80%'
-                                    }}>Nex is part of the thriving Arbitrum ecosystem, the leading L2 technology, empowering builders of Ethereum.</Typography>
+                                    <Typography variant="h6">Nex is part of the thriving Arbitrum ecosystem, the leading L2 technology, empowering builders of Ethereum.</Typography>
                                 </Stack>
                                 <Button variant='outlined' sx={{
                                 background: theme.palette.info.main,
