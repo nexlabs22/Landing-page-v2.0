@@ -19,9 +19,9 @@ const FeaturesSection = () => {
                                     width: '100%',
                                 }}>One-stop-shop</Typography>
                                 <Stack>
-                                    <Typography variant="h6">✔ One click trading</Typography>
-                                    <Typography variant="h6">✔ Manage TradFi & Crypto assets</Typography>
-                                    <Typography variant="h6">✔ No wallet needed ! Easy social login</Typography>
+                                    <Typography variant="subtitle1">✔ One click trading</Typography>
+                                    <Typography variant="subtitle1">✔ Manage TradFi & Crypto assets</Typography>
+                                    <Typography variant="subtitle1">✔ No wallet needed ! Easy social login</Typography>
                                 </Stack>
                             </Stack>
                         </Stack>
@@ -37,9 +37,9 @@ const FeaturesSection = () => {
                                     width: '100%',
                                 }}>Story based investing</Typography>
                                 <Stack>
-                                    <Typography variant="h6">✔ Narrative-Based Asset Trading</Typography>
-                                    <Typography variant="h6">✔ Machine Learning & AI based funds</Typography>
-                                    <Typography variant="h6">✔ Reduced Volatility Index Products</Typography>
+                                    <Typography variant="subtitle1">✔ Narrative-Based Asset Trading</Typography>
+                                    <Typography variant="subtitle1">✔ Machine Learning & AI based funds</Typography>
+                                    <Typography variant="subtitle1">✔ Reduced Volatility Index Products</Typography>
                                 </Stack>
                             </Stack>
                         </Stack>
@@ -55,9 +55,9 @@ const FeaturesSection = () => {
                                     width: '100%',
                                 }}>Self custody</Typography>
                                 <Stack>
-                                    <Typography variant="h6">✔ Transparent smart contract sode</Typography>
-                                    <Typography variant="h6">✔ 24/7 Globally tradeable assets</Typography>
-                                    <Typography variant="h6">✔ Automatically Reinvested Dividends</Typography>
+                                    <Typography variant="subtitle1">✔ Transparent smart contract sode</Typography>
+                                    <Typography variant="subtitle1">✔ 24/7 Globally tradeable assets</Typography>
+                                    <Typography variant="subtitle1">✔ Automatically Reinvested Dividends</Typography>
                                 </Stack>
                             </Stack>
                         </Stack>

@@ -11,7 +11,7 @@ import thirdwebLogo from '@assets/thirdweb_logo.webp'
 
 const BentoSection = () => {
     return (
-        <Stack width={'100%'} alignItems={'center'} justifyContent={'center'} paddingY={10} paddingX={16}>
+        <Stack width={'100%'} alignItems={'center'} justifyContent={'center'} paddingY={8} paddingX={16}>
             <Stack width={'100%'} direction="row" alignItems="stretch" justifyContent={'center'} gap={1.5}>
                 <Stack width={'35%'} >
                     <CustomCard gradient={`linear-gradient(10.81deg, ${theme.palette.NexCardGradient1_1.main} 8.01%, ${theme.palette.NexCardGradient1_2.main} 96.61%)`} shadow="0px 40px 180px rgba(0, 0, 0, 0.35)" border={`solid 2px ${theme.palette.NexGradientBorder1_2}`}>
