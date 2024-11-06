@@ -115,18 +115,14 @@ function ColorPalette({ id }: { id: string }) {
 const AreaLineChart = () => {
     return (
         <LineChart
-            series={[{
-                data: uData,
-                area: true,
-                showMark: true,
-                type: 'line',
-            }]}
+            series={[{ data: uData, label: 'Index', area: true, showMark: false }]}
+            xAxis={[{ scaleType: 'point', data: xLabels, hideTooltip: true }]}
             leftAxis={null}
             bottomAxis={null}
+            tooltip={undefined}
             slotProps={{
                 legend: { hidden: true },
-                area: { begin: 'url(#colorUv)' }
-
+                area: { begin: 'url(#colorUv)' },
             }}
             margin={{
                 left: 0,
