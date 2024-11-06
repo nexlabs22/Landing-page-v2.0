@@ -8,7 +8,7 @@ import { red, grey } from '@mui/material/colors';
 
 const FAQSection = () => {
     return (
-        <Stack width={'100%'} alignItems={'center'} justifyContent={'start'} gap={4} paddingBottom={8} paddingX={8}>
+        <Stack width={'100%'} alignItems={'center'} justifyContent={'start'} gap={4} paddingBottom={8} paddingX={8} position={'relative'} zIndex={10}>
             <Typography variant="h5">
                 FAQ
             </Typography>
