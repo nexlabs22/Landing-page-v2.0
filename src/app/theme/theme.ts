@@ -217,7 +217,7 @@ const theme = createTheme({
             borderRadius: 16
           }
         }
-      }
+      },
   },
   
 });

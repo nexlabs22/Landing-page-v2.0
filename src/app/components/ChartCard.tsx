@@ -3,10 +3,7 @@ import CustomCard from "@components/CustomCard";
 import Image from "next/image";
 import theme from "@theme/theme";
 
-import ANFILogo from '@assets/anfi.webp'
-import CR5Logo from '@assets/cr5.webp'
-import MAG7Logo from '@assets/mag7.webp'
-import ARBEILogo from '@assets/arb.webp'
+import AreaLineChart from "./LineChart";
 
 import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrowDown';
 import KeyboardDoubleArrowUpIcon from '@mui/icons-material/KeyboardDoubleArrowUp';
@@ -53,6 +50,9 @@ const ChartCard: React.FC<ChartCardProps> = ({ product }) => {
                         </Stack>
                     </Stack>
                     <Chip label={product.tag} />
+                </Stack>
+                <Stack width={'100%'} height={'50%'} marginX={'auto'} direction={'row'} alignItems={'center'} justifyContent={'center'}>
+                    <AreaLineChart></AreaLineChart>
                 </Stack>
                 <Stack width={'100%'} direction={'row'} alignItems={'center'} justifyContent={'space-between'}>
                     <Paper sx={{
