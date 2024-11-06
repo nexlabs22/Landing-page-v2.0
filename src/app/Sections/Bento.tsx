@@ -11,16 +11,20 @@ import thirdwebLogo from '@assets/thirdweb_logo.webp'
 
 const BentoSection = () => {
     return (
-        <Stack width={'100%'} alignItems={'center'} justifyContent={'center'} paddingY={8} paddingX={16}>
+        <Stack width={'100%'} alignItems={'center'} justifyContent={'center'} paddingY={8} paddingX={8}>
             <Stack width={'100%'} direction="row" alignItems="stretch" justifyContent={'center'} gap={1.5}>
-                <Stack width={'35%'} >
+                <Stack width={'50%'} >
                     <CustomCard gradient={`linear-gradient(10.81deg, ${theme.palette.NexCardGradient1_1.main} 8.01%, ${theme.palette.NexCardGradient1_2.main} 96.61%)`} shadow="0px 40px 180px rgba(0, 0, 0, 0.35)" border={`solid 2px ${theme.palette.NexGradientBorder1_2}`}>
-                        <Stack height={'100%'} width={'100%'} direction={'column'} alignItems={'start'} justifyContent={'space-between'} position={'relative'} gap={14} zIndex={3}>
+                        <Stack height={'100%'} width={'100%'} direction={'column'} alignItems={'start'} justifyContent={'space-between'} position={'relative'} zIndex={3}>
                             <Stack gap={1} width={'100%'} position={'relative'} zIndex={2}>
                                 <Typography variant="h5" sx={{
                                     width: '75%'
                                 }}>Nex is building with Chainlink CCIP</Typography>
-                                <Typography variant="h6">Chainlink's CCIP enhances blockchain interoperability by seamlessly bridging multiple networks. It ensures accurate, tamper-proof data transfer using decentralized oracles, eliminating single points of failure. This makes CCIP a unique and invaluable tool in the blockchain ecosystem.</Typography>
+                                <Typography variant="h6" sx={{
+                                    width: '95%'
+                                }}>
+                                Chainlink’s Cross-Chain Interoperability Protocol (CCIP) enhances blockchain interoperability by securely linking multiple networks. Using decentralized oracles, it ensures accurate, tamper-proof data transfer without single points of failure, making CCIP an essential tool in the blockchain ecosystem for cross-chain transactions and advanced decentralized applications.
+                                </Typography>
                             </Stack>
                             <Button variant='outlined' sx={{
                                 background: theme.palette.info.main,
@@ -33,7 +37,7 @@ const BentoSection = () => {
                                 position: 'absolute',
                                 height: '15rem',
                                 width: 'auto',
-                                bottom: '-3.5rem',
+                                bottom: '-4rem',
                                 right: '-4.5rem',
                                 zIndex: 1
                             }}></Image>
@@ -41,10 +45,10 @@ const BentoSection = () => {
                     </CustomCard>
 
                 </Stack>
-                <Stack width={'40%'} direction={'column'} gap={1.5}>
+                <Stack width={'50%'} direction={'column'} gap={1.5}>
                     <Stack width={'100%'} height={'50%'}>
                         <CustomCard gradient={`linear-gradient(180deg, ${theme.palette.NexArbCardGradient1.main} 0%, ${theme.palette.NexArbCardGradient2.main} 100%), url('${grains.src}') bottom/cover no-repeat`} shadow="0px 40px 180px rgba(0, 0, 0, 0.35)" border={`solid 2px ${theme.palette.NexGradientBorder1_2}`}>
-                            <Stack height={'100%'} width={'100%'} direction={'column'} alignItems={'start'} justifyContent={'space-between'} position={'relative'} zIndex={3}>
+                            <Stack height={'100%'} width={'100%'} direction={'column'} alignItems={'start'} justifyContent={'space-between'} position={'relative'} gap={3} zIndex={3}>
                                 <Stack gap={1} width={'100%'} position={'relative'} zIndex={2}>
                                     <Typography variant="h5" sx={{
                                         width: '75%'
@@ -62,7 +66,7 @@ const BentoSection = () => {
                                     position: 'absolute',
                                     height: '12rem',
                                     width: 'auto',
-                                    bottom: '-5rem',
+                                    bottom: '-6rem',
                                     right: '-4rem',
                                     zIndex: 1
                                 }}></Image>
@@ -71,7 +75,7 @@ const BentoSection = () => {
                     </Stack>
                     <Stack width={'100%'} height={'50%'}>
                         <CustomCard gradient={`url('${thirdwebCover.src}') left/cover no-repeat`} shadow="0px 40px 180px rgba(0, 0, 0, 0.35)" border={`solid 2px ${theme.palette.NexGradientBorder1_2}`}>
-                            <Stack height={'100%'} width={'100%'} direction={'column'} alignItems={'start'} justifyContent={'space-between'} position={'relative'} zIndex={3}>
+                            <Stack height={'100%'} width={'100%'} direction={'column'} alignItems={'start'} justifyContent={'space-between'} position={'relative'} gap={3} zIndex={3}>
                                 <Stack gap={1} width={'100%'} position={'relative'} zIndex={2}>
                                     <Typography variant="h5" sx={{
                                         width: '75%'
@@ -89,7 +93,7 @@ const BentoSection = () => {
                                     position: 'absolute',
                                     height: '10rem',
                                     width: 'auto',
-                                    bottom: '-5rem',
+                                    bottom: '-5.5rem',
                                     right: '-1.5rem',
                                     zIndex: 1,
                                     opacity: 0.8

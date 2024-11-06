@@ -6,6 +6,7 @@ import BentoSection from "@sections/Bento";
 import FeaturesSection from "@sections/Features";
 import PartnersSection from "@sections/Partners";
 import ConversionSection from "@sections/Conversion";
+import FAQSection from "@sections/Faq";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
           <BentoSection />
           <FeaturesSection />
           <ConversionSection />
+          <FAQSection />
         </Stack>
       </Container>
     </Box>

@@ -53,7 +53,7 @@ const theme = createTheme({
     text: {
       primary: "#FFFFFF",
       secondary: "#121212",
-      disabled: "rgba(255, 255, 255, 0.38)",
+      disabled: "#BDBDBD",
     },
     primary: {
       main: "#1976D2",
@@ -207,6 +207,15 @@ const theme = createTheme({
                 paddingTop: '.25rem',
                 borderRadius: '2rem'
             },
+        }
+      },
+      MuiAccordion:{
+        styleOverrides: {
+          root:{
+            background: 'linear-gradient(0deg, #121318 0%, #252525 100%)',
+            filter: 'drop-shadow(0px 40px 180px rgba(0, 0, 0, 0.35))',
+            borderRadius: 16
+          }
         }
       }
   },

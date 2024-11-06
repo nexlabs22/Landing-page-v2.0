@@ -4,7 +4,7 @@ import theme from "@theme/theme";
 
 const FeaturesSection = () => {
     return (
-        <Stack width={'100%'} alignItems={'center'} justifyContent={'start'} gap={4}>
+        <Stack width={'100%'} alignItems={'center'} justifyContent={'start'} gap={4} paddingX={8}>
             <Typography variant="h5">
                 Features
             </Typography>
@@ -27,7 +27,7 @@ const FeaturesSection = () => {
                         </Stack>
                     </CustomCard>
                 </Stack>
-                <Stack width={'30%'}>
+                <Stack width={'33%'}>
                     <CustomCard gradient={`linear-gradient(10.81deg, ${theme.palette.NexCardGradient1_1.main} 8.01%, ${theme.palette.NexCardGradient1_2.main} 96.61%)`} shadow="0px 40px 180px rgba(0, 0, 0, 0.35)" border={`solid 2px ${theme.palette.NexGradientBorder1_2}`}>
                         <Stack alignItems={'start'} justifyContent={'space-between'} gap={2}>
                             <Stack direction={'row'} alignItems={'center'} justifyContent={'center'}>{/*Box for Animated Icon*/}</Stack>
@@ -45,7 +45,7 @@ const FeaturesSection = () => {
                         </Stack>
                     </CustomCard>
                 </Stack>
-                <Stack width={'30%'}>
+                <Stack width={'33%'}>
                     <CustomCard gradient={`linear-gradient(10.81deg, ${theme.palette.NexCardGradient1_1.main} 8.01%, ${theme.palette.NexCardGradient1_2.main} 96.61%)`} shadow="0px 40px 180px rgba(0, 0, 0, 0.35)" border={`solid 2px ${theme.palette.NexGradientBorder1_2}`}>
                         <Stack alignItems={'start'} justifyContent={'space-between'} gap={2}>
                             <Stack direction={'row'} alignItems={'center'} justifyContent={'center'}>{/*Box for Animated Icon*/}</Stack>
