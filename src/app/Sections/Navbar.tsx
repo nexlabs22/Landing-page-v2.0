@@ -8,7 +8,7 @@ const Navbar = () => {
                 <Image src={logo} alt="NexLabs Nex Labs logo xlogo" height={40} width={40} style={{
                     filter: 'brightness(0) invert(1)'
                 }} />
-                <Stack display={{xs: 'none', lg: 'block'}} direction={'row'} alignItems={'center'} justifyContent={'center'} gap={8}>
+                <Stack display={{xs: 'none', lg: 'flex'}} direction={'row'} alignItems={'center'} justifyContent={'center'} gap={8}>
                     <Typography variant="h6">Home</Typography>
                     <Typography variant="h6">Docs</Typography>
                 </Stack>

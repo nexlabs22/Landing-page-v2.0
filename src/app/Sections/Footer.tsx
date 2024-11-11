@@ -61,7 +61,7 @@ const Footer = () => {
                     </Stack>
                 </Stack>
             </Stack>
-            <Stack display={{xs: 'none', lg: 'block'}} width={'100%'} direction={'row'} alignItems={'center'} justifyContent={'center'} gap={{xs: 1, lg: 2}} position={'relative'} zIndex={10}>
+            <Stack display={{xs: 'none', lg: 'flex'}} width={'100%'} direction={'row'} alignItems={'center'} justifyContent={'center'} gap={{xs: 1, lg: 2}} position={'relative'} zIndex={10}>
                 <Typography variant="subtitle1" sx={{ fontWeight: 700 }}>Terms & Conditions</Typography>
                 |
                 <Typography variant="subtitle1" sx={{ fontWeight: 700 }}>Privacy Policy</Typography>

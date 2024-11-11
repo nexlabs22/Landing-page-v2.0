@@ -2,8 +2,8 @@ import { Stack } from "@mui/material";
 
 const FooterBG = () => {
     return (
-        
-        <Stack visibility={{xs: 'hidden', lg: 'visible'}} width={'100%'} height={{xs: '100vh', lg: '100%'}} justifyContent={'end'} position={'absolute'} bottom={0} zIndex={-1} overflow={'hidden'}
+
+        <Stack display={{lg: 'block'}} visibility={{ xs: 'hidden', lg: 'visible' }} width={'100vw'} height={'60vh'} position={'absolute'} bottom={0} zIndex={-1} 
         >
             <svg viewBox="0 0 1728 1091" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink"
 
