@@ -10,16 +10,16 @@ import IndicesWithDetails from "../Indices";
 
 const HeroSection = () => {
     return (
-        <Box width={'100%'} height={'100vh'} position={'relative'} >
+        <Box width={'100%'} height={{lg: '100vh'}} position={'relative'} >
             <HeroShadows />
             <Navbar />
-            <Stack width={'100%'} height={'88%'} position={'relative'} zIndex={3} marginX={'auto'} marginTop={2} padding={3} direction={'row'} alignItems={'center'} gap={2}>
-                <Box display={'flex'} width={'35%'} height={'100%'}>
+            <Stack width={'100%'} height={'88%'} position={'relative'} zIndex={3} marginX={'auto'} marginTop={{xs: 4, lg: 2}} padding={{xs: 0, lg: 3}} direction={{xs: 'column', lg: 'row'}} alignItems={'center'} gap={2}>
+                <Box display={'flex'} width={{xs: '100%', lg: '35%'}} height={'100%'}>
                     <HeroCard />
                 </Box>
-                <Grid container rowSpacing={2} columnSpacing={2} width={'65%'} height={'100%'}>
+                <Grid container rowSpacing={2} columnSpacing={2} width={{xs: '100%', lg: '65%'}} height={'100%'}>
                     {IndicesWithDetails.map((item, index) => (
-                        <Grid size={6} key={index}>
+                        <Grid size={{xs: 12, lg: 6}} key={index}>
                             <Box display={'flex'} width={'100%'} height={'100%'}>
                                 <ChartCard product={item} />
                             </Box>

@@ -16,7 +16,7 @@ export default function Home() {
       <HeroBG />
       
       <Container maxWidth="xl">
-        <Stack padding={{xs: 1, sm: 1, md: 4}}>
+        <Stack padding={{xs: 0, sm: 0, md: 4}}>
           <HeroSection />
           <StatsSection />
           <BentoSection />

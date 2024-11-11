@@ -8,7 +8,7 @@ import { red, grey } from '@mui/material/colors';
 
 const FAQSection = () => {
     return (
-        <Stack width={'100%'} alignItems={'center'} justifyContent={'start'} gap={4} paddingBottom={8} paddingX={8} position={'relative'} zIndex={10}>
+        <Stack width={'100%'} alignItems={'center'} justifyContent={'start'} gap={4} paddingBottom={{ xs: 0, lg: 8 }} paddingX={{ xs: 2, lg: 8 }} position={'relative'} zIndex={10}>
             <Typography variant="h5">
                 FAQ
             </Typography>
@@ -21,7 +21,7 @@ const FAQSection = () => {
                     >
                         <Stack direction={'row'} alignItems={'center'} gap={2}>
                             <Typography variant="h4" color={theme.palette.text.disabled}>01</Typography>
-                            <Typography variant="h5">What trading hours do your products have?</Typography>
+                            <Typography variant="h6" fontWeight={700}>What trading hours do your products have?</Typography>
                         </Stack>
 
                     </AccordionSummary>
@@ -39,7 +39,7 @@ const FAQSection = () => {
                     >
                         <Stack direction={'row'} alignItems={'center'} gap={2}>
                             <Typography variant="h4" color={theme.palette.text.disabled}>02</Typography>
-                            <Typography variant="h5">What is TP and SL?</Typography>
+                            <Typography variant="h6" fontWeight={700}>What is TP and SL?</Typography>
                         </Stack>
 
                     </AccordionSummary>
@@ -59,7 +59,7 @@ const FAQSection = () => {
                     >
                         <Stack direction={'row'} alignItems={'center'} gap={2}>
                             <Typography variant="h4" color={theme.palette.text.disabled}>03</Typography>
-                            <Typography variant="h5">How much are the management fees on Nex?</Typography>
+                            <Typography variant="h6" fontWeight={700}>How much are the management fees on Nex?</Typography>
                         </Stack>
 
                     </AccordionSummary>
@@ -77,7 +77,7 @@ const FAQSection = () => {
                     >
                         <Stack direction={'row'} alignItems={'center'} gap={2}>
                             <Typography variant="h4" color={theme.palette.text.disabled}>04</Typography>
-                            <Typography variant="h5">How much are the management fees on Nex?</Typography>
+                            <Typography variant="h6" fontWeight={700}>How much are the management fees on Nex?</Typography>
                         </Stack>
 
                     </AccordionSummary>
