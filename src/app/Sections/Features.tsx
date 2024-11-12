@@ -19,9 +19,9 @@ const FeaturesSection = () => {
                                     width: '100%',
                                 }}>One-stop-shop</Typography>
                                 <Stack gap={1}>
-                                    <Typography variant="h6">✔ Multi Assets</Typography>
-                                    <Typography variant="h6">✔ Multi Products</Typography>
-                                    <Typography variant="h6">✔ Multi Chains</Typography>
+                                    <Typography variant="h6">✔ Managged TradiFi & Crypto Assets</Typography>
+                                    <Typography variant="h6">✔ Spot Products & Derivatives</Typography>
+                                    <Typography variant="h6">✔ Multi Chain Availability & Single Chain Experience</Typography>
                                 </Stack>
                             </Stack>
                         </Stack>
