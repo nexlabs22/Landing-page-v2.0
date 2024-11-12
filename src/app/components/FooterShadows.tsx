@@ -39,7 +39,7 @@ const FooterShadows = () => {
                 boxShadow: '10px 0px 250px 200px rgba(18,18,18,1)'
             }}></Box>
 
-            <Box width={'100%'} height={'2vw'} position={'absolute'} top={'20%'} left={0} zIndex={1} sx={{
+            <Box width={'100%'} height={'5vw'} position={'absolute'} top={'0%'} left={0} zIndex={1} sx={{
                 backgroundColor: theme.palette.background.default,
                 boxShadow: '0px 10px 150px 100px rgba(18,18,18,1)'
             }}></Box>

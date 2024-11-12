@@ -8,7 +8,7 @@ const FeaturesSection = () => {
             <Typography variant="h5">
                 Features
             </Typography>
-            <Stack width={'100%'} direction={{xs: 'column', lg: 'row'}} alignItems={'center'} justifyContent={{xs: 'start', lg: 'center'}} gap={2}>
+            <Stack width={'100%'} direction={{xs: 'column', lg: 'row'}} alignItems={{xs: 'center', lg: 'stretch'}} justifyContent={{xs: 'start', lg: 'center'}} gap={2}>
                 <Stack width={{xs: '100%', lg: '33%'}}>
                     <CustomCard gradient={`linear-gradient(10.81deg, ${theme.palette.NexCardGradient1_1.main} 8.01%, ${theme.palette.NexCardGradient1_2.main} 96.61%)`} shadow="0px 40px 180px rgba(0, 0, 0, 0.35)" border={`solid 2px ${theme.palette.NexGradientBorder1_2}`}>
                         <Stack alignItems={'start'} justifyContent={'space-between'} gap={2}>
@@ -18,10 +18,10 @@ const FeaturesSection = () => {
                                     textAlign: 'center',
                                     width: '100%',
                                 }}>One-stop-shop</Typography>
-                                <Stack>
-                                    <Typography variant="h6">✔ One click trading</Typography>
-                                    <Typography variant="h6">✔ Manage TradFi & Crypto assets</Typography>
-                                    <Typography variant="h6">✔ No wallet needed ! Easy social login</Typography>
+                                <Stack gap={1}>
+                                    <Typography variant="h6">✔ Multi Assets</Typography>
+                                    <Typography variant="h6">✔ Multi Products</Typography>
+                                    <Typography variant="h6">✔ Multi Chains</Typography>
                                 </Stack>
                             </Stack>
                         </Stack>
@@ -35,11 +35,11 @@ const FeaturesSection = () => {
                                 <Typography variant="h5" sx={{
                                     textAlign: 'center',
                                     width: '100%',
-                                }}>Story based investing</Typography>
-                                <Stack>
-                                    <Typography variant="h6">✔ Narrative-Based Asset Trading</Typography>
-                                    <Typography variant="h6">✔ Machine Learning & AI based funds</Typography>
-                                    <Typography variant="h6">✔ Reduced Volatility Index Products</Typography>
+                                }}>Smart Index Platform</Typography>
+                                <Stack gap={1}>
+                                    <Typography variant="h6">✔ Narrative-Based indices.</Typography>
+                                    <Typography variant="h6">✔ Machine Learning driven trading.</Typography>
+                                    <Typography variant="h6">✔ Auto reinvest dividends.</Typography>
                                 </Stack>
                             </Stack>
                         </Stack>
@@ -54,10 +54,10 @@ const FeaturesSection = () => {
                                     textAlign: 'center',
                                     width: '100%',
                                 }}>Self custody</Typography>
-                                <Stack>
-                                    <Typography variant="h6">✔ Transparent smart contract sode</Typography>
-                                    <Typography variant="h6">✔ 24/7 Globally tradeable assets</Typography>
-                                    <Typography variant="h6">✔ Automatically Reinvested Dividends</Typography>
+                                <Stack gap={1}>
+                                    <Typography variant="h6">✔ Smart contract enbaled 24/7 trading.</Typography>
+                                    <Typography variant="h6">✔ Social login with MFA</Typography>
+                                    <Typography variant="h6">✔ Build your own index, become a fund manager</Typography>
                                 </Stack>
                             </Stack>
                         </Stack>

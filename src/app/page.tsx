@@ -26,8 +26,6 @@ export default function Home() {
           <Footer />
         </Stack>
       </Container>
-      <FooterBG />
-
     </Box>
   );
 }

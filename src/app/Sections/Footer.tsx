@@ -7,15 +7,16 @@ import XIcon from '@mui/icons-material/X';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import { FaMedium } from "react-icons/fa6";
 import FooterShadows from "@components/FooterShadows";
+import FooterBG from "@assets/footerBG";
 
 
 const Footer = () => {
     return (
-        <Stack width={'100%'} alignItems={'center'} justifyContent={{xs: 'end', lg: 'start'}} paddingX={{xs: 2, lg: 8}} paddingBottom={{xs: 3, lg: 0}} gap={{xs: 3, lg: 8}} position={'relative'}>
+        <Stack width={'100%'} height={{xs: '80vh', lg: '60vh'}} alignItems={'center'} justifyContent={{xs: 'end', lg: 'start'}} paddingX={{xs: 2, lg: 8}} paddingBottom={{xs: 3, lg: 0}} gap={{xs: 3, lg: 8}} position={'relative'} overflow={'hidden'}>
             <Stack>
                 <FooterShadows />
             </Stack>
-            <Stack width={'100%'} direction={{xs: 'column', lg: 'row'}} alignItems={'start'} justifyContent={{xs: 'start', lg: 'space-between'}} paddingTop={{xs: 8, lg: 10}} position={'relative'} zIndex={10} gap={{xs: 3, lg: 0}}>
+            <Stack width={'100%'} direction={{xs: 'column', lg: 'row'}} alignItems={'start'} justifyContent={{xs: 'start', lg: 'space-between'}} paddingTop={{xs: 8, lg: 4}} position={'relative'} zIndex={10} gap={{xs: 3, lg: 0}}>
                 <Stack width={{xs: '100%', lg: 'row'}} gap={3}>
                     <Stack direction={'row'} alignItems={'start'} gap={1}>
                         <Image src={logo} alt="NexLabs Nex Labs logo xlogo" height={34} width={34} style={{
@@ -66,6 +67,7 @@ const Footer = () => {
                 |
                 <Typography variant="subtitle1" sx={{ fontWeight: 700 }}>Privacy Policy</Typography>
             </Stack>
+            <FooterBG />
         </Stack>
     )
 }

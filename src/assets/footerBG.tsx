@@ -3,9 +3,9 @@ import { Stack } from "@mui/material";
 const FooterBG = () => {
     return (
 
-        <Stack display={{lg: 'block'}} visibility={{ xs: 'hidden', lg: 'visible' }} width={'100vw'} height={'60vh'} position={'absolute'} bottom={0} zIndex={-1} 
+        <Stack display={{lg: 'block'}} visibility={{ xs: 'hidden', lg: 'visible' }} width={'100vw'} height={'60vh'} position={'absolute'} zIndex={-1} 
         >
-            <svg viewBox="0 0 1728 1091" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink"
+            <svg width={'100%'} viewBox="0 0 1728 1091" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink"
 
             >
                 <rect x="-78" width="1806" height="1091" fill="url(#pattern0_24_7318)" />
