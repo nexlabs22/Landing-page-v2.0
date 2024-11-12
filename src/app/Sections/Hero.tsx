@@ -6,7 +6,7 @@ import HeroShadows from "@components/HeroShadows";
 import HeroCard from "@components/HeroCard";
 import ChartCard from "@components/ChartCard";
 
-import IndicesWithDetails from "../Indices";
+import { IndicesWithDetails } from "../Indices";
 
 const HeroSection = () => {
     return (

@@ -3,7 +3,7 @@ import CR5Logo from '@assets/cr5.webp'
 import MAG7Logo from '@assets/mag7.webp'
 import ARBEILogo from '@assets/arb.webp'
 
-interface Index{
+export interface Index{
     name: string;
     logo: string;
     symbol: string;
@@ -18,7 +18,7 @@ interface Index{
     tag: string;
 }
 
-const IndicesWithDetails: Index[] = [
+export const IndicesWithDetails: Index[] = [
     {
         name: "Anti Inflation Index",
         logo: ANFILogo.src,
@@ -80,5 +80,3 @@ const IndicesWithDetails: Index[] = [
         tag: 'CRYPTO'
     },
 ]
-
-export default IndicesWithDetails

@@ -1,4 +1,4 @@
-import { Stack, Button, Typography } from "@mui/material";
+import { Stack, Button, Typography, Link } from "@mui/material";
 import CustomCard from "@components/CustomCard";
 import Image from "next/image";
 import theme from "@theme/theme";
@@ -21,11 +21,13 @@ const HeroCard = () => {
                         Bring real-world assets (RWAs) on-chain and simplifying the investing process for users.
                     </Typography>
                 </Stack>
-                <Button variant='outlined' sx={{
-                    width: { xs: 'fit-content', lg: '50%' },
-                }}>Explore our indices</Button>
+                <Link href="https://app.nexlabs.io/trade" target="_blank">
+                    <Button variant='outlined' sx={{
+                        width: { xs: 'fit-content', lg: '100%' },
+                    }}>Explore our indices</Button>
+                </Link>
             </Stack>
-            <Stack display={{xs: 'none', lg: 'block'}}>
+            <Stack display={{ xs: 'none', lg: 'block' }}>
                 <Image src={shape1} alt="nex labs nexlabs shape loop 3D dark" height={550} width={550} style={{
                     position: 'absolute',
                     right: '-30%',
@@ -33,7 +35,7 @@ const HeroCard = () => {
                     zIndex: 2
                 }} />
             </Stack>
-            <Stack display={{xs: 'block', lg: 'none'}}>
+            <Stack display={{ xs: 'block', lg: 'none' }}>
                 <Image src={shape1} alt="nex labs nexlabs shape loop 3D dark" height={400} width={400} style={{
                     position: 'absolute',
                     right: '-32%',

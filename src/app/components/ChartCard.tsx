@@ -1,7 +1,8 @@
-import { Stack, Chip, Typography, Paper } from "@mui/material";
+import { Stack, Chip, Typography, Paper, Link } from "@mui/material";
 import CustomCard from "@components/CustomCard";
 import Image from "next/image";
 import theme from "@theme/theme";
+import { type Index } from "../Indices";
 
 import AreaLineChart from "./LineChart";
 
@@ -10,20 +11,6 @@ import KeyboardDoubleArrowUpIcon from '@mui/icons-material/KeyboardDoubleArrowUp
 import HelpIcon from '@mui/icons-material/Help';
 import CallMadeIcon from '@mui/icons-material/CallMade';
 
-interface Index {
-    name: string;
-    logo: string;
-    symbol: string;
-    shortSymbol: string;
-    description: string;
-    mktCap: number;
-    mktPrice: number;
-    chg24h: number;
-    tokenAddress: string;
-    managementFee: string;
-    totalSupply: string;
-    tag: string;
-}
 
 
 interface ChartCardProps {
@@ -51,7 +38,7 @@ const ChartCard: React.FC<ChartCardProps> = ({ product }) => {
                     </Stack>
                     <Chip label={product.tag} />
                 </Stack>
-                <Stack width={'100%'} height={{xs: '16vh', lg: '50%'}} marginX={'auto'} marginY={{xs: 3, lg: 0}} direction={'row'} alignItems={'center'} justifyContent={'center'}>
+                <Stack width={'100%'} height={{ xs: '16vh', lg: '50%' }} marginX={'auto'} marginY={{ xs: 3, lg: 0 }} direction={'row'} alignItems={'center'} justifyContent={'center'}>
                     <AreaLineChart></AreaLineChart>
                 </Stack>
                 <Stack width={'100%'} direction={'row'} alignItems={'center'} justifyContent={'space-between'}>
@@ -78,16 +65,18 @@ const ChartCard: React.FC<ChartCardProps> = ({ product }) => {
                             }} />
                         </Stack>
                     </Paper>
-                    <Paper sx={{
-                        display: 'flex',
-                        flexDirection: 'row',
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                        gap: 0.5
-                    }}>
-                        <Typography variant='body1'>Trade</Typography>
-                        <CallMadeIcon fontSize="small" color="info" />
-                    </Paper>
+                    <Link href={`https://app.nexlabs.io/tradeIndex?index=${product.symbol}`} target="_blank" underline="none" color={theme.palette.text.primary}>
+                        <Paper sx={{
+                            display: 'flex',
+                            flexDirection: 'row',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            gap: 0.5
+                        }}>
+                            <Typography variant='body1'>Trade</Typography>
+                            <CallMadeIcon fontSize="small" color="info" />
+                        </Paper>
+                    </Link>
                 </Stack>
             </Stack>
         </CustomCard>
