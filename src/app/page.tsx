@@ -21,8 +21,8 @@ export default function Home() {
           <StatsSection />
           <BentoSection />
           <FeaturesSection />
-          <PartnersSection />
           <ConversionSection />
+          <PartnersSection />
           <FAQSection />
           <Footer />
         </Stack>
