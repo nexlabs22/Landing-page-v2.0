@@ -7,8 +7,8 @@ import FeaturesSection from "@sections/Features";
 import PartnersSection from "@sections/Partners";
 import ConversionSection from "@sections/Conversion";
 import FAQSection from "@sections/Faq";
+import BlogSection from "@sections/Blog";
 import Footer from "@sections/Footer";
-import FooterBG from "@assets/footerBG";
 
 export default function Home() {
   return (
@@ -24,6 +24,7 @@ export default function Home() {
           <ConversionSection />
           <PartnersSection />
           <FAQSection />
+          <BlogSection />
           <Footer />
         </Stack>
       </Container>
