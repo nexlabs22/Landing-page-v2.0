@@ -12,7 +12,7 @@ import FooterBG from "@assets/footerBG";
 
 const Footer = () => {
     return (
-        <Stack width={'100%'} height={{xs: '80vh', lg: '60vh'}} alignItems={'center'} justifyContent={{xs: 'end', lg: 'start'}} paddingX={{xs: 2, lg: 8}} paddingBottom={{xs: 3, lg: 0}} gap={{xs: 3, lg: 8}} position={'relative'} overflow={'hidden'}>
+        <Stack width={'100%'} height={{xs: 'auto', lg: '60vh'}} alignItems={'center'} justifyContent={{xs: 'end', lg: 'start'}} paddingX={{xs: 2, lg: 8}} paddingBottom={{xs: 3, lg: 0}} gap={{xs: 3, lg: 8}} position={'relative'} overflow={'hidden'}>
             <Stack>
                 <FooterShadows />
             </Stack>
