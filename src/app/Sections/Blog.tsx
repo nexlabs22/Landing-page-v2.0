@@ -81,7 +81,7 @@ const BlogSection = () => {
     };
 
     return (
-        <Stack width={'100%'} alignItems={'center'} justifyContent={'start'} gap={{ xs: 3, lg: 4 }} paddingTop={{xs: 4, lg: 0}} paddingX={{ xs: 2, lg: 8 }} sx={{
+        <Stack width={'100%'} alignItems={'center'} gap={{ xs: 3, lg: 4 }} paddingTop={{xs: 4, lg: 0}} paddingX={{ xs: 2, lg: 8 }} sx={{
             backgroundColor: 'transparent',
             '& .carousel-container': {
                 width: '100%',

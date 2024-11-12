@@ -12,7 +12,7 @@ const StatsSection = () => {
             
             <DottedBackground />
             <StatsShadows />
-            <Stack width={'100%'} paddingY={{xs: 2, lg: 8}} paddingX={{xs: 2, lg: 8}} alignItems={'start'} justifyContent={'start'} zIndex={9} gap={4}>
+            <Stack width={'100%'} paddingY={{xs: 0, lg: 8}} paddingX={{xs: 2, lg: 8}} alignItems={'start'} justifyContent={'start'} zIndex={9} gap={4}>
                 <Typography variant="h5">
                     NEX: A Growing Ecosystem
                 </Typography>
