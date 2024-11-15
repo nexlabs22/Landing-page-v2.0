@@ -1,6 +1,6 @@
 import { Box, Container, Stack } from "@mui/material";
 import HeroBG from "@assets/heroBG";
-import HeroSection from "@sections/Hero";
+import HeroSection from "@sections/Hero"
 import StatsSection from "@sections/Stats";
 import BentoSection from "@sections/Bento";
 import FeaturesSection from "@sections/Features";
