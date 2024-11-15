@@ -28,7 +28,7 @@
     "paths": {
       "@components/*": ["src/app/components/*"],
       "@sections/*": ["src/app/sections/*"],
-			"@assets/*": ["src/assets/*"],
+			"@assets/*": ["src/app/assets/*"],
       "@theme/*": ["src/app/theme/*"],
       "@types/*": ["src/app/types/*"],
     }
