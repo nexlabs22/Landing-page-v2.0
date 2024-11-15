@@ -27,7 +27,7 @@
     "baseUrl": ".",
     "paths": {
       "@components/*": ["src/app/components/*"],
-      "@sections/*": ["src/app/Sections/*"],
+      "@sections/*": ["src/app/sections/*"],
 			"@assets/*": ["src/assets/*"],
       "@theme/*": ["src/app/theme/*"],
       "@types/*": ["src/app/types/*"],

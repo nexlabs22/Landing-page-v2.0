@@ -1,4 +1,4 @@
-import { Button, Stack, Typography, Link } from "@mui/material"
+import { Button, Stack, Box, Typography, Link } from "@mui/material"
 import CustomCard from "@components/CustomCard"
 import theme from "@theme/theme"
 import Image from "next/image"

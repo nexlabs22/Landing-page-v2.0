@@ -1,4 +1,4 @@
-import { Stack, Typography, Link } from "@mui/material";
+import { Stack, Typography, Link, Box } from "@mui/material";
 import Marquee from "react-fast-marquee";
 import Image from "next/image";
 import theme from "@theme/theme";
@@ -13,11 +13,11 @@ import tv from '@assets/tradingview.webp'
 const PartnersSection = () => {
     return (
         <Stack width={'100%'} alignItems={'center'} justifyContent={'start'} gap={4} paddingX={{ xs: 2, lg: 8 }} paddingBottom={8} paddingTop={{ xs: 4, lg: 0 }} position={'relative'} overflow={'hidden'}>
-            <Stack width={{ xs: '5vw', lg: '8vw' }} height={'100%'} position={'absolute'} left={0} zIndex={2} sx={{
+            <Box width={{ xs: '5vw', lg: '8vw' }} height={'100%'} position={'absolute'} left={0} zIndex={2} sx={{
                 boxShadow: `5px 0px 50px 20px ${theme.palette.background.default}`,
                 backgroundColor: theme.palette.background.default,
                 blur: '8px'
-            }}></Stack>
+            }}></Box>
             <Typography variant="h5">
                 Our Partners
             </Typography>
@@ -531,11 +531,11 @@ const PartnersSection = () => {
             </Marquee>
             </Stack>
 
-            <Stack width={{ xs: '5vw', lg: '8vw' }} height={'100%'} position={'absolute'} right={0} zIndex={2} sx={{
+            <Box width={{ xs: '5vw', lg: '8vw' }} height={'100%'} position={'absolute'} right={0} zIndex={2} sx={{
                 boxShadow: `-5px 0px 50px 20px ${theme.palette.background.default}`,
                 backgroundColor: theme.palette.background.default,
                 blur: '8px'
-            }}></Stack>
+            }}></Box>
         </Stack>
     )
 }
