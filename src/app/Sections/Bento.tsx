@@ -48,7 +48,7 @@ const BentoSection = () => {
                                     bottom: '-4rem',
                                     right: '-4.5rem',
                                     zIndex: 1
-                                }}></Image>
+                                }} />
                             </Stack><Stack display={{ xs: 'block', lg: 'none' }}>
                                 <Image src={chainlink3D} alt="chainlink CCIP Nex Labs NexLabs Build Program" style={{
                                     position: 'absolute',
@@ -57,7 +57,7 @@ const BentoSection = () => {
                                     bottom: '-5rem',
                                     right: '-4.5rem',
                                     zIndex: 1
-                                }}></Image>
+                                }} />
                             </Stack>
                         </Stack>
                     </CustomCard>
@@ -89,7 +89,7 @@ const BentoSection = () => {
                                     bottom: '-6rem',
                                     right: '-4rem',
                                     zIndex: 1
-                                }}></Image>
+                                }} />
                             </Stack>
                         </CustomCard>
                     </Stack>
@@ -119,7 +119,7 @@ const BentoSection = () => {
                                     right: '-1.5rem',
                                     zIndex: 1,
                                     opacity: 0.8
-                                }}></Image>
+                                }} />
                             </Stack>
                         </CustomCard>
                     </Stack>
