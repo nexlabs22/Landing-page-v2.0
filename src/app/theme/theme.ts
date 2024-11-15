@@ -58,27 +58,21 @@ const theme = createTheme({
     primary: {
       main: "#1976D2",
       dark: "#1565C0",
-      contrastText: "#FFFFFF",
     },
     secondary: {
-      contrastText: "#FFFFFF",
       main: "#9C27B0",
     },
     error: {
-      contrastText: "#FFFFFF",
       main: "#D32F2F",
     },
     warning: {
-      contrastText: "#FFFFFF",
       main: "#EF6C00",
       dark: "#E65100",
     },
     info: {
-      contrastText: "#FFFFFF",
       main: "#FFFFFF",
     },
     success: {
-      contrastText: "#FFFFFF",
       main: "#2E7D32",
     },
     background: {
@@ -125,15 +119,6 @@ const theme = createTheme({
   },
   shape: {
     borderRadius: 16
-  },
-  breakpoints: {
-    values: {
-      xs: 0,
-      sm: 600,
-      md: 900,
-      lg: 1200,
-      xl: 1536,
-    },
   },
   components: {  
     MuiButton: {
