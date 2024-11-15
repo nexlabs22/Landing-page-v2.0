@@ -43,22 +43,7 @@ function ColorPalette({ id }: { id: string }) {
                     stopOpacity={1}
                 />
                 <stop
-                    offset={scale(4000) / svgHeight}
-                    stopColor={theme.palette.NexCardGradient1_1.main}
-                    stopOpacity={1}
-                />
-                <stop
                     offset={scale(3000) / svgHeight}
-                    stopColor={theme.palette.NexCardGradient1_1.main}
-                    stopOpacity={1}
-                />
-                <stop
-                    offset={scale(3000) / svgHeight}
-                    stopColor={theme.palette.NexCardGradient1_1.main}
-                    stopOpacity={1}
-                />
-                <stop
-                    offset={scale(2000) / svgHeight}
                     stopColor={theme.palette.NexCardGradient1_1.main}
                     stopOpacity={1}
                 />
@@ -72,18 +57,8 @@ function ColorPalette({ id }: { id: string }) {
                     stopColor={theme.palette.NexCardGradient1_2.main}
                     stopOpacity={1}
                 />
-                <stop
-                    offset={scale(1000) / svgHeight}
-                    stopColor={theme.palette.NexCardGradient1_2.main}
-                    stopOpacity={1}
-                />
                 <stop offset={scale(0) / svgHeight} stopColor={theme.palette.NexCardGradient1_2.main} stopOpacity={1} />
                 <stop offset={scale(0) / svgHeight} stopColor={theme.palette.NexCardGradient1_2.main} stopOpacity={1} />
-                <stop
-                    offset={scale(-1000) / svgHeight}
-                    stopColor={theme.palette.NexCardGradient1_2.main}
-                    stopOpacity={1}
-                />
                 <stop
                     offset={scale(-1000) / svgHeight}
                     stopColor={theme.palette.NexCardGradient1_2.main}
