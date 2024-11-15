@@ -39,7 +39,7 @@ const ChartCard: React.FC<ChartCardProps> = ({ product }) => {
                     <Chip label={product.tag} />
                 </Stack>
                 <Stack width={'100%'} height={{ xs: '20vh', lg: '50%' }} marginX={'auto'} paddingY={{xs: 3, lg: 0}} direction={'row'} alignItems={'center'} justifyContent={'center'}>
-                    <AreaLineChart></AreaLineChart>
+                    <AreaLineChart />
                 </Stack>
                 <Stack width={'100%'} direction={'row'} alignItems={'center'} justifyContent={'space-between'}>
                     <Paper sx={{
