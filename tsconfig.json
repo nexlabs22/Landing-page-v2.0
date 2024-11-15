@@ -31,7 +31,6 @@
 			"@assets/*": ["src/assets/*"],
       "@theme/*": ["src/app/theme/*"],
       "@types/*": ["src/app/types/*"],
-      "@styles/*": ["src/app/styles/*"],
     }
   },
   "include": [
