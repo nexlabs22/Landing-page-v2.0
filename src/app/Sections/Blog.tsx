@@ -103,9 +103,8 @@ const BlogSection = () => {
                 itemClass="carousel-item"
             >
                 {articlesList.map((article: Article, index) => (
-                    <Link href={article.link} target="_blank" underline="none" color={theme.palette.text.primary}>
+                    <Link key={index} href={article.link} target="_blank" underline="none" color={theme.palette.text.primary}>
                         <Stack
-                            key={index}
                             height={{xs: 200, lg: 250}}
                             width="100%"
                             alignItems={'center'}
