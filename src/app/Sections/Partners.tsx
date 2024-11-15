@@ -17,7 +17,7 @@ const PartnersSection = () => {
                 boxShadow: `5px 0px 50px 20px ${theme.palette.background.default}`,
                 backgroundColor: theme.palette.background.default,
                 blur: '8px'
-            }}></Box>
+            }} />
             <Typography variant="h5">
                 Our Partners
             </Typography>
@@ -535,7 +535,7 @@ const PartnersSection = () => {
                 boxShadow: `-5px 0px 50px 20px ${theme.palette.background.default}`,
                 backgroundColor: theme.palette.background.default,
                 blur: '8px'
-            }}></Box>
+            }} />
         </Stack>
     )
 }
