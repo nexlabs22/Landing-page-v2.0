@@ -1,7 +1,6 @@
 import { Stack, Typography } from "@mui/material";
 import CustomCard from "@components/CustomCard";
 import theme from "@theme/theme";
-
 import CheckIcon from '@mui/icons-material/Check';
 
 const FeaturesSection = () => {

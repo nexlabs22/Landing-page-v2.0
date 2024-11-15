@@ -1,7 +1,6 @@
 import { Stack, Typography, Divider } from "@mui/material";
 import DottedBackground from "@components/DottedBackground";
 import StatsShadows from "@components/StatsShadows";
-import theme from "@theme/theme";
 
 const StatsSection = () => {
     return (

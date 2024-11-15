@@ -5,7 +5,6 @@ import HeroShadows from "@components/HeroShadows";
 import HeroCard from "@components/HeroCard";
 import ChartCard from "@components/ChartCard";
 import MobileIndicesSlider from "@components/MobileIndicesSlider";
-
 import { IndicesWithDetails } from "../Indices";
 
 const HeroSection = () => {

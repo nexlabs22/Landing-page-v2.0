@@ -1,5 +1,5 @@
 'use client'
-import { Stack, Typography, Button, Link } from "@mui/material";
+import { Stack, Button } from "@mui/material";
 import theme from "@theme/theme";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';

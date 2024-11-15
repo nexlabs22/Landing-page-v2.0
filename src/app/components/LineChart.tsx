@@ -1,9 +1,8 @@
 'use client'
 import * as React from 'react';
-import { areaElementClasses, LineChart, lineElementClasses } from '@mui/x-charts/LineChart';
+import { areaElementClasses, LineChart } from '@mui/x-charts/LineChart';
 import { useYScale, useDrawingArea } from '@mui/x-charts/hooks';
 import { ScaleLinear } from 'd3-scale';
-import { green, red } from '@mui/material/colors';
 import theme from '@theme/theme';
 
 const uData = [4000, 3000, 2000, 2780, 1890, 2390, 3490];
@@ -16,13 +15,6 @@ const xLabels = [
     'Page F',
     'Page G',
 ];
-
-type ColorSwichProps = {
-    threshold: number;
-    color1: string;
-    color2: string;
-    id: string;
-};
 
 function ColorPalette({ id }: { id: string }) {
     const { top, height, bottom } = useDrawingArea();

@@ -4,7 +4,6 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AddIcon from '@mui/icons-material/Add';
 import theme from "@theme/theme";
-import { red, grey } from '@mui/material/colors';
 
 const FAQSection = () => {
     return (

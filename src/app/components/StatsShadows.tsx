@@ -1,4 +1,4 @@
-import { Stack, Box } from "@mui/material";
+import { Box } from "@mui/material";
 import theme from "@theme/theme";
 
 const StatsShadows = () => {
