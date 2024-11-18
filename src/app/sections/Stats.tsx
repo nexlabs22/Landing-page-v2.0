@@ -1,15 +1,17 @@
 import { Stack, Typography, Divider } from "@mui/material";
-import DottedBackground from "@components/DottedBackground";
+import DottedBackground from "@assets/dotted.webp";
 import StatsShadows from "@components/StatsShadows";
 
 const StatsSection = () => {
     return (
         <Stack width={'100%'} alignItems={'center'} marginTop={{xs: 8, lg: 0}} justifyContent={'center'} position={'relative'} zIndex={10} sx={{
             overflowX: 'hidden',
-            overflowY: 'hidden'
+            overflowY: 'hidden',
+            backgroundImage: `url('${DottedBackground.src}')`,
+            backgroundSize: 'contain',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat',
         }}>
-            
-            <DottedBackground />
             <StatsShadows />
             <Stack width={'100%'} paddingY={{xs: 0, lg: 8}} paddingX={{xs: 2, lg: 8}} alignItems={'start'} justifyContent={'start'} zIndex={9} gap={4}>
                 <Typography variant="h5">
