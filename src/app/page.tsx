@@ -16,15 +16,15 @@ export default function Home() {
       <HeroBG />
       
       <Container maxWidth="xl">
-        <Stack padding={{xs: 0, sm: 0, md: 4}}>
+        <Stack padding={{xs: 0, sm: 0, md: 4, lg: 2}}>
           <HeroSection />
           <StatsSection />
           <BentoSection />
           <FeaturesSection />
-          <ConversionSection />
           <PartnersSection />
           <FAQSection />
           <BlogSection />
+          <ConversionSection />
           <Footer />
         </Stack>
       </Container>

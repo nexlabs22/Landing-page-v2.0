@@ -12,13 +12,13 @@ import tv from '@assets/tradingview.webp'
 
 const PartnersSection = () => {
     return (
-        <Stack width={'100%'} alignItems={'center'} justifyContent={'start'} gap={4} paddingX={{ xs: 2, lg: 8 }} paddingBottom={8} paddingTop={{ xs: 4, lg: 0 }} position={'relative'} overflow={'hidden'}>
+        <Stack width={'100%'} alignItems={'center'} justifyContent={'start'} gap={4} paddingX={{ xs: 2, lg: 8 }} paddingBottom={8} paddingTop={{ xs: 4, lg: 8 }} position={'relative'} overflow={'hidden'}>
             <Box width={{ xs: '5vw', lg: '8vw' }} height={'100%'} position={'absolute'} left={0} zIndex={2} sx={{
                 boxShadow: `5px 0px 50px 20px ${theme.palette.background.default}`,
                 backgroundColor: theme.palette.background.default,
                 blur: '8px'
             }} />
-            <Typography variant="h5">
+            <Typography variant="h3">
                 Our Partners
             </Typography>
             <Stack width={'100%'} display={{ xs: 'none', lg: 'flex' }}>

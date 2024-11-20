@@ -10,14 +10,14 @@ const HeroCard = () => {
     return (
         <CustomCard gradient={`linear-gradient(10.81deg, ${theme.palette.NexCardGradient1_1.main} 8.01%, ${theme.palette.NexCardGradient1_2.main} 96.61%)`} shadow="0px 40px 180px rgba(0, 0, 0, 0.35)" border={`solid 2px ${theme.palette.NexGradientBorder1_2}`}>
             <Stack height={'100%'} width={'100%'} direction={'column'} alignItems={'start'} justifyContent={'space-between'} position={'relative'} gap={{ xs: 16, lg: 0 }} zIndex={3}>
-                <Stack gap={1} width={{ xs: '100%', lg: '85%' }}>
-                    <Typography variant="subtitle1">
+                <Stack gap={1} width={{xs: '100%', lg: '95%'}}>
+                    <Typography variant="body2">
                         Simplifying RWA Index Products and Beyond
                     </Typography>
-                    <Typography variant="h4">
+                    <Typography variant="h2">
                         Your one-stop-shop for asset management
                     </Typography>
-                    <Typography variant="h6">
+                    <Typography variant="subtitle1">
                         Bring real-world assets (RWAs) on-chain and simplifying the investing process for users.
                     </Typography>
                 </Stack>

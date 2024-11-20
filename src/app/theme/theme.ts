@@ -95,46 +95,56 @@ const theme = createTheme({
     },
   },
 typography: {
+    fontFamily: 'Satoshi-Variable',
     h1: {
-    fontWeight: 700,
+      fontWeight: 700,
+      fontSize: '5rem'
     },
     h2: {
-    fontWeight: 600,
+      fontWeight: 700,
+      fontSize: '2.5rem'
     },
     h3: {
-    fontWeight: 600,
+      fontWeight: 700,
+      fontSize: '1.75rem'
     },
     h4: {
-    fontWeight: 500,
+      fontWeight: 700,
+      fontSize: '1.5rem'
     },
     h5: {
-    fontWeight: 500, 
+      fontWeight: 700,
+      fontSize: '1.25rem'
     },
     h6: {
-    fontWeight: 500, 
+      fontWeight: 500,
+      fontSize: '1rem'
     },
     subtitle1: {
-    fontWeight: 400, 
+      fontWeight: 400,
+      fontSize: '1rem'
     },
     subtitle2: {
-    fontWeight: 500,
+      fontWeight: 400,
+      fontSize: '0.875rem'
     },
     body1: {
-    fontWeight: 400, 
+      fontWeight: 400,
+      fontSize: '1rem'
     },
     body2: {
-    fontWeight: 400, 
-    },
-    button: {
-    fontWeight: 500, 
+      fontWeight: 400,
+      fontSize: '0.875rem'
     },
     caption: {
-    fontWeight: 400, 
+      fontWeight: 400,
+      fontSize: '0.75rem'
     },
     overline: {
-    fontWeight: 600, 
+      fontWeight: 400,
+      fontSize: '0.75rem'
     },
-    },
+  },
   shape: {
     borderRadius: 16
   },
@@ -145,7 +155,7 @@ typography: {
           props: { variant: "outlined" },
           style: {
             backgroundImage: `linear-gradient(64.63deg, #20544B 0%, #389685 100%)`,
-            fontWeight: 500,
+            fontWeight: 700,
             fontSize: "1.2rem",
             boxShadow: "rgba(0, 0, 0, 0.25) 0px 4px 4px 1px",
             textTransform: "none",
@@ -159,7 +169,7 @@ typography: {
         root: {
           backgroundImage: `linear-gradient(64.63deg, #20544B 0%, #389685 100%)`,
           color: "#F2F2F2",
-          fontWeight: 500,
+          fontWeight: 700,
           fontSize: "1rem",
           boxShadow: "rgba(0, 0, 0, 0.25) 0px 4px 4px 1px",
           outline: "none",

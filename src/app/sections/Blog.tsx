@@ -91,7 +91,7 @@ const BlogSection = () => {
                 padding: {xs: '0 5px', lg: '0 0px'}
             }
         }}>
-            <Typography variant="h5">
+            <Typography variant="h3">
                 Blog
             </Typography>
             <Carousel
@@ -115,7 +115,7 @@ const BlogSection = () => {
                             <CustomCard gradient={`url('${mediaBG.src}') top/cover repeat`} shadow={`0px 2px 10px ${theme.palette.NexGradientBorder1_2}`} border={`solid 2px ${theme.palette.NexGradientBorder1_2}`}>
                                 <Stack height={'100%'} width={'100%'} justifyContent={'end'} gap={1} paddingTop={8}>
                                     <Typography variant="subtitle2">{article.source}</Typography>
-                                    <Typography variant="h6" fontWeight={600}>{article.title}</Typography>
+                                    <Typography variant="h5" fontWeight={600}>{article.title}</Typography>
                                 </Stack>
                             </CustomCard>
                         </Stack>

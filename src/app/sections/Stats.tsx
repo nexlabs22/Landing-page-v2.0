@@ -1,6 +1,7 @@
 import { Stack, Typography, Divider } from "@mui/material";
 import DottedBackground from "@assets/dotted.webp";
 import StatsShadows from "@components/StatsShadows";
+import theme from "@theme/theme";
 
 const StatsSection = () => {
     return (
@@ -8,13 +9,13 @@ const StatsSection = () => {
             overflowX: 'hidden',
             overflowY: 'hidden',
             backgroundImage: `url('${DottedBackground.src}')`,
-            backgroundSize: 'contain',
+            backgroundSize: '100% 100%',
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',
         }}>
             <StatsShadows />
-            <Stack width={'100%'} paddingY={{xs: 0, lg: 8}} paddingX={{xs: 2, lg: 8}} alignItems={'start'} justifyContent={'start'} zIndex={9} gap={4}>
-                <Typography variant="h5">
+            <Stack width={'100%'} paddingY={{xs: 0, lg: 8}} paddingX={{xs: 2, lg: 4}} alignItems={'start'} justifyContent={'start'} zIndex={9} gap={4}>
+                <Typography variant="h3">
                     NEX: A Growing Ecosystem
                 </Typography>
                 <Stack width={'100%'} alignItems={'center'} gap={3}>
@@ -22,24 +23,24 @@ const StatsSection = () => {
                         <Stack gap={1.5}>
                             <Typography variant="h1">2</Typography>
                             <Stack gap={1}>
-                                <Typography variant="h5">Networks</Typography>
-                                <Typography variant="subtitle1">X+ more to come in 2025</Typography>
+                                <Typography variant="h3" color={theme.palette.NexCardGradient1_2.main}>Networks</Typography>
+                                <Typography variant="body2" color={theme.palette.text.disabled}>More to come in 2025</Typography>
                             </Stack>
                         </Stack>
                         <Divider sx={{ borderColor: 'white', display: {xs: 'block', lg: 'none'} }} />
                         <Stack gap={1.5}>
                             <Typography variant="h1">3</Typography>
                             <Stack gap={1}>
-                                <Typography variant="h5">Asset Types</Typography>
-                                <Typography variant="subtitle1">X+ more to come in 2025</Typography>
+                                <Typography variant="h3" color={theme.palette.NexCardGradient1_2.main}>Asset Types</Typography>
+                                <Typography variant="body2" color={theme.palette.text.disabled}>More to come in 2025</Typography>
                             </Stack>
                         </Stack>
                         <Divider sx={{ borderColor: 'white', display: {xs: 'block', lg: 'none'} }} />
                         <Stack gap={1.5}>
                             <Typography variant="h1">4</Typography>
                             <Stack gap={1}>
-                                <Typography variant="h5">Trading Products</Typography>
-                                <Typography variant="subtitle1">10+ more to come in 2025</Typography>
+                                <Typography variant="h3" color={theme.palette.NexCardGradient1_2.main}>Trading Products</Typography>
+                                <Typography variant="body2" color={theme.palette.text.disabled}>10+ more to come in 2025</Typography>
                             </Stack>
                         </Stack>
                         <Divider sx={{ borderColor: 'white', display: {xs: 'block', lg: 'none'} }} />
@@ -48,16 +49,16 @@ const StatsSection = () => {
                         <Stack gap={1.5}>
                             <Typography variant="h1">x2</Typography>
                             <Stack gap={1}>
-                                <Typography variant="h5">Time Saved</Typography>
-                                <Typography variant="subtitle1">Compared to other platforms</Typography>
+                                <Typography variant="h3" color={theme.palette.NexCardGradient1_2.main}>Time Saved</Typography>
+                                <Typography variant="body2" color={theme.palette.text.disabled}>Compared to other platforms</Typography>
                             </Stack>
                         </Stack>
                         <Divider sx={{ borderColor: 'white', display: {xs: 'block', lg: 'none'} }} />
                         <Stack gap={1.5}>
                             <Typography variant="h1">24</Typography>
                             <Stack gap={1}>
-                                <Typography variant="h5">Underlying Assets</Typography>
-                                <Typography variant="subtitle1">30+ more to come in 2025</Typography>
+                                <Typography variant="h3" color={theme.palette.NexCardGradient1_2.main}>Underlying Assets</Typography>
+                                <Typography variant="body2" color={theme.palette.text.disabled}>30+ more to come in 2025</Typography>
                             </Stack>
                         </Stack>
                         <Divider sx={{ borderColor: 'white', display: {xs: 'block', lg: 'none'} }} />
