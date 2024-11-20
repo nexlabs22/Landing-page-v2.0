@@ -9,7 +9,7 @@ const StatsSection = () => {
             overflowX: 'hidden',
             overflowY: 'hidden',
             backgroundImage: `url('${DottedBackground.src}')`,
-            backgroundSize: '100% 100%',
+            backgroundSize: {xs: 'cover', lg: '100% 100%'},
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',
         }}>
