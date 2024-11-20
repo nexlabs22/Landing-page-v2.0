@@ -155,7 +155,7 @@ typography: {
           props: { variant: "outlined" },
           style: {
             backgroundImage: `linear-gradient(64.63deg, #20544B 0%, #389685 100%)`,
-            fontWeight: 700,
+            fontWeight: 600,
             fontSize: "1.2rem",
             boxShadow: "rgba(0, 0, 0, 0.25) 0px 4px 4px 1px",
             textTransform: "none",
@@ -169,7 +169,7 @@ typography: {
         root: {
           backgroundImage: `linear-gradient(64.63deg, #20544B 0%, #389685 100%)`,
           color: "#F2F2F2",
-          fontWeight: 700,
+          fontWeight: 600,
           fontSize: "1rem",
           boxShadow: "rgba(0, 0, 0, 0.25) 0px 4px 4px 1px",
           outline: "none",
