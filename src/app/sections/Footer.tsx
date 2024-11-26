@@ -24,31 +24,31 @@ const Footer = () => {
                         <Image src={logo} alt="NexLabs Nex Labs logo xlogo" height={34} width={34} style={{
                             filter: 'brightness(0) invert(1)'
                         }} />
-                        <Typography variant="h4">NexLabs</Typography>
+                        <Typography variant="h5">NexLabs</Typography>
                     </Stack>
                     <Stack gap={2}>
                         <Link href="https://www.linkedin.com/company/nex-labs/" target="_blank" underline="none" color={theme.palette.text.primary}>
                             <Stack direction={'row'} alignItems={'center'} gap={1}>
                                 <LinkedInIcon color="info" />
-                                <Typography variant="subtitle1">NEX Labs</Typography>
+                                <Typography variant="body1">NEX Labs</Typography>
                             </Stack>
                         </Link>
                         <Link href="https://twitter.com/NEX_Protocol" target="_blank" underline="none" color={theme.palette.text.primary}>
                             <Stack direction={'row'} alignItems={'center'} gap={1}>
                                 <XIcon color="info" />
-                                <Typography variant="subtitle1">@Nex_Protocol</Typography>
+                                <Typography variant="body1">@Nex_Protocol</Typography>
                             </Stack>
                         </Link>
                         <Link href="https://nexlabs.medium.com/" target="_blank" underline="none" color={theme.palette.text.primary}>
                             <Stack direction={'row'} alignItems={'center'} gap={1}>
                                 <FaMedium color="info" size={24} />
-                                <Typography variant="subtitle1">Nex Labs</Typography>
+                                <Typography variant="body1">Nex Labs</Typography>
                             </Stack>
                         </Link>
                         <Link href="https://github.com/nexlabs22" target="_blank" underline="none" color={theme.palette.text.primary}>
                             <Stack direction={'row'} alignItems={'center'} gap={1}>
                                 <GitHubIcon color="info" />
-                                <Typography variant="subtitle1">github.com/nexlabs22</Typography>
+                                <Typography variant="body1">github.com/nexlabs22</Typography>
                             </Stack>
                         </Link>
                     </Stack>
@@ -57,16 +57,16 @@ const Footer = () => {
                     <Typography variant="h5">About Nex</Typography>
                     <Stack gap={2}>
                         <Link href="https://app.nexlabs.io/" target="_blank" underline="none" color={theme.palette.text.primary}>
-                            <Typography variant="subtitle1">dApp</Typography>
+                            <Typography variant="body1">dApp</Typography>
                         </Link>
                         <Link href="https://github.com/nexlabs22/%E2%80%A6ices-Model-Contracts" target="_blank" underline="none" color={theme.palette.text.primary}>
-                            <Typography variant="subtitle1">Public repository</Typography>
+                            <Typography variant="body1">Public repository</Typography>
                         </Link>
                         <Link href="https://nex-labs.gitbook.io/nex-dex/" target="_blank" underline="none" color={theme.palette.text.primary}>
-                            <Typography variant="subtitle1">Whitepaper</Typography>
+                                <Typography variant="body1">Whitepaper</Typography>
                         </Link>
                         <Link href="https://www.nexlabs.io/license" target="_blank" underline="none" color={theme.palette.text.primary}>
-                            <Typography variant="subtitle1">Licences</Typography>
+                            <Typography variant="body1">Licences</Typography>
                         </Link>
                     </Stack>
                 </Stack>
@@ -74,27 +74,27 @@ const Footer = () => {
                     <Typography variant="h5">Whitepaper pieces</Typography>
                     <Stack gap={2}>
                         <Link href="https://nex-labs.gitbook.io/nex-dex/spot-indices/nex-labs-spot-index-standard-model" target="_blank" underline="none" color={theme.palette.text.primary}>
-                            <Typography variant="subtitle1">Spot - Indices</Typography>
+                            <Typography variant="body1">Spot - Indices</Typography>
                         </Link>
                         <Link href="https://nex-labs.gitbook.io/nex-dex/" target="_blank" underline="none" color={theme.palette.text.primary}>
-                            <Typography variant="subtitle1">Protocol Structure</Typography>
+                                <Typography variant="body1">Protocol Structure</Typography>
                         </Link>
                         <Link href="https://nex-labs.gitbook.io/nex-dex/token-and-smart-contract-details/address-and-ticker" target="_blank" underline="none" color={theme.palette.text.primary}>
-                            <Typography variant="subtitle1">Token & Smart contract details</Typography>
+                            <Typography variant="body1">Token & Smart contract details</Typography>
                         </Link>
                         <Link href="https://nex-labs.gitbook.io/nex-dex/additional-information/roadmap" target="_blank" underline="none" color={theme.palette.text.primary}>
-                            <Typography variant="subtitle1">Roadmap</Typography>
+                            <Typography variant="body1">Roadmap</Typography>
                         </Link>
                     </Stack>
                 </Stack>
             </Stack>
             <Stack display={{ xs: 'none', lg: 'flex' }} width={'100%'} direction={'row'} alignItems={'center'} justifyContent={'center'} gap={{ xs: 1, lg: 2 }} position={'relative'} zIndex={10}>
                 <Link href="/terms_and_conditions" target="_blank" underline="none" color={theme.palette.text.primary}>
-                    <Typography variant="subtitle1" sx={{ fontWeight: 700 }}>Terms & Conditions</Typography>
+                    <Typography variant="caption" sx={{ fontWeight: 700 }}>Terms & Conditions</Typography>
                 </Link>
                 |
                 <Link href="privacy_policy" target="_blank" underline="none" color={theme.palette.text.primary}>
-                    <Typography variant="subtitle1" sx={{ fontWeight: 700 }}>Privacy Policy</Typography>
+                    <Typography variant="caption" sx={{ fontWeight: 700 }}>Privacy Policy</Typography>
                 </Link>
             </Stack>
             <FooterBG />

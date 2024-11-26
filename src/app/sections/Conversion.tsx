@@ -9,9 +9,9 @@ const ConversionSection = () => {
         <Stack width={'100%'} alignItems={'center'} justifyContent={'start'} gap={4} paddingY={{ xs: 4, lg: 8 }} paddingX={{ xs: 2, lg: 8 }}>
             <CustomCard gradient={`linear-gradient(10.81deg, ${theme.palette.NexCardGradient1_1.main} 8.01%, ${theme.palette.NexCardGradient1_2.main} 96.61%)`} shadow="0px 40px 180px rgba(0, 0, 0, 0.35)" border={`solid 2px ${theme.palette.NexGradientBorder1_2}`}>
                 <Stack width={{ xs: '100%', lg: '40%' }} justifyContent={'center'} gap={{ xs: 8, lg: 2 }} position={'relative'} zIndex={2}>
-                    <Stack>
-                        <Typography variant="h5">Elevate Your Investment Experience</Typography>
-                        <Typography variant="h6">
+                    <Stack gap={1}>
+                        <Typography variant="h4">Elevate Your Investment Experience</Typography>
+                        <Typography variant="body1">
                             Step into the future of investing with NEX! Access our dApp to discover a world of new opportunities and transform your investing journey.
                         </Typography>
                     </Stack>

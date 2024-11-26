@@ -28,7 +28,7 @@ const ChartCard: React.FC<ChartCardProps> = ({ product }) => {
                     <Stack direction={'row'} alignItems={'center'} justifyContent={'start'} gap={1}>
                         <Image src={product.logo} alt="nex labs nexlabs ANFI index anti inflation" height={50} width={50} />
                         <Stack direction={'column'}>
-                            <Typography variant="subtitle1" sx={{ fontWeight: 700 }}>
+                            <Typography variant="h5">
                                 {product.symbol.toUpperCase()}
                             </Typography>
                             <Typography variant="subtitle2">

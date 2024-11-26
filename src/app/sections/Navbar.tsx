@@ -10,8 +10,8 @@ const Navbar = () => {
                 filter: 'brightness(0) invert(1)'
             }} />
             <Stack display={{ xs: 'none', lg: 'flex' }} direction={'row'} alignItems={'center'} justifyContent={'center'} gap={8}>
-                <Link href="/" underline="none" color={theme.palette.text.primary}><Typography variant="h6">Home</Typography></Link>
-                <Link href="https://nex-labs.gitbook.io/nex-dex" target="_blank" underline="none" color={theme.palette.text.primary}><Typography variant="h6">Docs</Typography></Link>
+                <Link href="/" underline="none" color={theme.palette.text.primary}><Typography variant="h5">Home</Typography></Link>
+                <Link href="https://nex-labs.gitbook.io/nex-dex" target="_blank" underline="none" color={theme.palette.text.primary}><Typography variant="h5">Docs</Typography></Link>
             </Stack>
             <Link href="https://app.nexlabs.io/" target="_blank">
                 <Button variant='outlined'>Open dApp</Button>
