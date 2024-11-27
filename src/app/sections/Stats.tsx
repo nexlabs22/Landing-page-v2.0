@@ -1,5 +1,5 @@
 import { Stack, Typography, Divider } from "@mui/material";
-import DottedBackground from "@assets/dotted.webp";
+import DottedBackground from "@assets/smallDottedGrey.webp";
 import StatsShadows from "@components/StatsShadows";
 import theme from "@theme/theme";
 
@@ -9,7 +9,7 @@ const StatsSection = () => {
             overflowX: 'hidden',
             overflowY: 'hidden',
             backgroundImage: `url('${DottedBackground.src}')`,
-            backgroundSize: {xs: 'cover', lg: '100% 100%'},
+            backgroundSize: {xs: 'cover', lg: '110%'},
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',
         }}>

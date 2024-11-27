@@ -5,10 +5,9 @@ import StatsSection from "@sections/Stats";
 import BentoSection from "@sections/Bento";
 import FeaturesSection from "@sections/Features";
 import PartnersSection from "@sections/Partners";
-import ConversionSection from "@sections/Conversion";
 import FAQSection from "@sections/Faq";
 import BlogSection from "@sections/Blog";
-import Footer from "@sections/Footer";
+import AlternativeFooter1 from "@sections/AlternativeFooter1";
 
 export default function Home() {
   return (
@@ -24,8 +23,7 @@ export default function Home() {
           <PartnersSection />
           <FAQSection />
           <BlogSection />
-          <ConversionSection />
-          <Footer />
+          <AlternativeFooter1 />
         </Stack>
       </Container>
     </Box>
