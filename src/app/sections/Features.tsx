@@ -2,6 +2,7 @@ import { Stack, Typography } from "@mui/material";
 import CustomCard from "@components/CustomCard";
 import theme from "@theme/theme";
 import CheckIcon from '@mui/icons-material/Check';
+import { IoCheckmarkDoneOutline } from "react-icons/io5";
 
 const FeaturesSection = () => {
     return (
@@ -21,15 +22,15 @@ const FeaturesSection = () => {
                                 }}>One-stop-shop</Typography>
                                 <Stack gap={1.5}>
                                     <Stack direction={'row'} alignItems={'start'} gap={0.5}>
-                                        <CheckIcon fontSize="medium" color="info" ></CheckIcon>
+                                        <IoCheckmarkDoneOutline color={theme.palette.NexCardGradient1_2.main} size={24} />
                                         <Typography variant="body1">Managged TradiFi & Crypto Assets</Typography>
                                     </Stack>
                                     <Stack direction={'row'} alignItems={'start'} gap={0.5}>
-                                        <CheckIcon fontSize="medium" color="info" ></CheckIcon>
+                                        <IoCheckmarkDoneOutline color={theme.palette.NexCardGradient1_2.main} size={24} />
                                         <Typography variant="body1">Spot Products & Derivatives</Typography>
                                     </Stack>
                                     <Stack direction={'row'} alignItems={'start'} gap={0.5}>
-                                        <CheckIcon fontSize="medium" color="info" ></CheckIcon>
+                                        <IoCheckmarkDoneOutline color={theme.palette.NexCardGradient1_2.main} size={24} />
                                         <Typography variant="body1">Multi Chain Availability & Single Chain Experience</Typography>
                                     </Stack>
                                 </Stack>
@@ -48,15 +49,15 @@ const FeaturesSection = () => {
                                 }}>Smart Index Platform</Typography>
                                 <Stack gap={1.5}>
                                     <Stack direction={'row'} alignItems={'start'} gap={0.5}>
-                                        <CheckIcon fontSize="medium" color="info" ></CheckIcon>
+                                        <IoCheckmarkDoneOutline color={theme.palette.NexCardGradient1_2.main} size={24} />
                                         <Typography variant="body1">Narrative-Based indices.</Typography>
                                     </Stack>
                                     <Stack direction={'row'} alignItems={'start'} gap={0.5}>
-                                        <CheckIcon fontSize="medium" color="info" ></CheckIcon>
+                                        <IoCheckmarkDoneOutline color={theme.palette.NexCardGradient1_2.main} size={24} />
                                         <Typography variant="body1">Machine Learning driven trading.</Typography>
                                     </Stack>
                                     <Stack direction={'row'} alignItems={'start'} gap={0.5}>
-                                        <CheckIcon fontSize="medium" color="info" ></CheckIcon>
+                                        <IoCheckmarkDoneOutline color={theme.palette.NexCardGradient1_2.main} size={24} />
                                         <Typography variant="body1">Auto reinvest dividends.</Typography>
                                     </Stack>
                                 </Stack>
@@ -75,15 +76,15 @@ const FeaturesSection = () => {
                                 }}>Self custody</Typography>
                                 <Stack gap={1.5}>
                                     <Stack direction={'row'} alignItems={'start'} gap={0.5}>
-                                        <CheckIcon fontSize="medium" color="info" ></CheckIcon>
+                                        <IoCheckmarkDoneOutline color={theme.palette.NexCardGradient1_2.main} size={24} />
                                         <Typography variant="body1">Smart contract enbaled 24/7 trading.</Typography>
                                     </Stack>
                                     <Stack direction={'row'} alignItems={'start'} gap={0.5}>
-                                        <CheckIcon fontSize="medium" color="info" ></CheckIcon>
+                                        <IoCheckmarkDoneOutline color={theme.palette.NexCardGradient1_2.main} size={24} />
                                         <Typography variant="body1">Social login with MFA</Typography>
                                     </Stack>
                                     <Stack direction={'row'} alignItems={'start'} gap={0.5}>
-                                        <CheckIcon fontSize="medium" color="info" ></CheckIcon>
+                                        <IoCheckmarkDoneOutline color={theme.palette.NexCardGradient1_2.main} size={24} />
                                         <Typography variant="body1">Build your own index, become a fund manager</Typography>
                                     </Stack>
                                 </Stack>

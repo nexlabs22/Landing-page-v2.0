@@ -14,32 +14,6 @@ import { FaMedium } from "react-icons/fa6";
 const AlternativeFooter1 = () => {
     return (
         <Stack width={'100%'}>
-            <Stack alignItems={'center'} justifyContent={'center'} position={'relative'} zIndex={10} paddingY={8} sx={{
-                overflowX: 'hidden',
-                overflowY: 'hidden',
-                backgroundImage: `url('${DottedBackground.src}')`,
-                backgroundSize: { xs: 'cover', lg: '150%' },
-                backgroundPosition: 'center',
-                backgroundRepeat: 'no-repeat',
-            }}>
-                <ConversionShadows />
-                <Stack alignItems={'center'} justifyContent={'center'} gap={2} position={'relative'} zIndex={9}>
-                    <Typography variant="h2">Elevate your trading experience</Typography>
-                    <Typography variant="subtitle1" textAlign={'center'} width={{xs: '100%', lg: '60%'}}>Step into the future of investing with NEX! Access our dApp to discover a world of new opportunities and transform your investing journey.</Typography>
-                    <Stack direction={'row'} gap={2}>
-                        <Link href="https://app.nexlabs.io/" target="_blank">
-                            <Button variant='outlined' sx={{
-                                width: '10rem',
-                            }}>Open dApp</Button>
-                        </Link>
-                        <Link href="https://app.nexlabs.io/" target="_blank">
-                            <Button variant='outlined' sx={{
-                                width: '10rem',
-                            }}>Docs</Button>
-                        </Link>
-                    </Stack>
-                </Stack>
-            </Stack>
             <Stack width={'100%'} direction={{ xs: 'column', lg: 'row' }} alignItems={'start'} justifyContent={{ xs: 'start', lg: 'space-between' }} paddingY={{ xs: 4, lg: 4 }} paddingX={{ xs: 2, lg: 8 }}>
                 <Stack width={{ xs: '100%', lg: '25%' }} height={'100%'} gap={3}>
                     <Stack gap={0.5}>

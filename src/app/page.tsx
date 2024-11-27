@@ -4,6 +4,8 @@ import HeroSection from "@sections/Hero"
 import StatsSection from "@sections/Stats";
 import BentoSection from "@sections/Bento";
 import FeaturesSection from "@sections/Features";
+import BuildIndex from "@sections/BuildIndex";
+import DCA from "@sections/DCA";
 import PartnersSection from "@sections/Partners";
 import FAQSection from "@sections/Faq";
 import BlogSection from "@sections/Blog";
@@ -19,7 +21,9 @@ export default function Home() {
           <HeroSection />
           <StatsSection />
           <BentoSection />
+          <DCA />
           <FeaturesSection />
+          <BuildIndex />
           <PartnersSection />
           <FAQSection />
           <BlogSection />
