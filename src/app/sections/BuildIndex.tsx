@@ -4,7 +4,7 @@ import Image from "next/image";
 import theme from "@theme/theme";
 import ConversionShadows from "@components/ConversionShadows";
 import Timeline from '@mui/lab/Timeline';
-import TimelineItem from '@mui/lab/TimelineItem';
+import TimelineItem, { timelineItemClasses } from '@mui/lab/TimelineItem';
 import TimelineSeparator from '@mui/lab/TimelineSeparator';
 import TimelineConnector from '@mui/lab/TimelineConnector';
 import TimelineContent from '@mui/lab/TimelineContent';
@@ -48,8 +48,8 @@ const BuildIndex = () => {
     ];
 
     return (
-        <Stack width={'100%'} height={'100%'} paddingTop={{ xs: 4, lg: 0 }} paddingX={{ xs: 2, lg: 8 }}>
-            <Stack alignItems={'center'} justifyContent={'center'} position={'relative'} zIndex={10} paddingY={8} sx={{
+        <Stack width={'100%'} height={'100%'} paddingX={{ xs: 2, lg: 8 }}>
+            <Stack alignItems={'center'} justifyContent={'center'} position={'relative'} zIndex={10} paddingBottom={8} sx={{
                 overflowX: 'hidden',
                 overflowY: 'hidden',
                 backgroundImage: `url('${DottedBackground.src}')`,
@@ -67,71 +67,98 @@ const BuildIndex = () => {
                     </Box>
                     <Typography variant="h2">Build your own index</Typography>
                     <Typography variant="subtitle1" textAlign={'center'} width={{ xs: '100%', lg: '60%' }}>NexLabs allows you to build your own index by turning your portfolio into a tradable index. You can choose from a variety of crypto assets, RWAs or commodities, customize weights and management fees.</Typography>
-                    <Box width={'100%'}>
-                        <Timeline sx={{ 
-                            display: 'flex', 
-                            flexDirection: 'row', 
-                            width: '100%', 
-                            justifyContent: 'center', 
-                            gap: 2, 
-                            alignItems: 'stretch' 
+                    <Box width={'100%'} display={{ xs: 'none', lg: 'flex' }}>
+                        <Timeline sx={{
+                            display: 'flex',
+                            flexDirection: 'row',
+                            width: '100%',
+                            justifyContent: 'center',
+                            gap: 2,
+                            alignItems: 'stretch'
                         }}>
                             {
                                 steps.map((step, index) => (
-                                    <TimelineItem key={index} sx={{ 
-                                        display: 'flex', 
-                                        flexDirection: 'column', 
-                                        alignItems: 'center', 
-                                        flex: 1 
+                                    <TimelineItem key={index} sx={{
+                                        display: 'flex',
+                                        flexDirection: 'column',
+                                        alignItems: 'center',
+                                        flex: 1
                                     }}>
-                                        <TimelineContent sx={{ 
-                                            marginTop: 2, 
-                                            width: '90%', 
-                                            paddingX: 0, 
+                                        <TimelineContent sx={{
+                                            marginTop: 2,
+                                            width: '90%',
+                                            paddingX: 0,
                                             flexGrow: 1,
                                             minHeight: '80%',
                                         }}>
                                             <CustomCard padding={2} gradient={`linear-gradient(180deg, ${theme.palette.NexCardGradient2_2.main} 0%, ${theme.palette.background.default} 80%)`} shadow="0px 0px 0px rgba(0, 0, 0, 0.35)" border={`solid 2px ${theme.palette.NexGradientBorder1_2}`}>
                                                 <Stack gap={1} height={'100%'}>
-                                                    <Typography variant="h5" color={theme.palette.NexCardGradient1_2.main} sx={{minHeight: '2rem'}}>{step.title}</Typography>
+                                                    <Typography variant="h5" color={theme.palette.NexCardGradient1_2.main} sx={{ minHeight: '2rem' }}>{step.title}</Typography>
                                                     <Typography variant="subtitle1">{step.description}</Typography>
                                                 </Stack>
                                             </CustomCard>
                                         </TimelineContent>
-                                        <TimelineSeparator sx={{ 
-                                            display: 'flex', 
-                                            flexDirection: 'row', 
-                                            alignItems: 'center', 
-                                            justifyContent: 'end', 
-                                            gap: 2, 
-                                            width: '100%' 
+                                        <TimelineSeparator sx={{
+                                            display: 'flex',
+                                            flexDirection: 'row',
+                                            alignItems: 'center',
+                                            justifyContent: 'end',
+                                            gap: 2,
+                                            width: '100%'
                                         }}>
-                                            <Box sx={{ 
-                                                position: 'relative', 
-                                                display: 'flex', 
-                                                alignItems: 'center', 
-                                                justifyContent: 'center',
+                                            <Box sx={{
+                                                position: 'relative',
+                                                display: 'flex',
+                                                alignItems: 'center',
+                                                justifyContent: 'center'
                                             }}>
-                                                <TimelineDot sx={{ 
-                                                    backgroundColor: theme.palette.NexCardGradient1_2.main, 
-                                                    position: 'relative',
-                                                    padding: 1.5
+                                                <TimelineDot sx={{
+                                                    backgroundColor: theme.palette.NexCardGradient1_2.main,
+                                                    position: 'relative'
                                                 }} />
-                                                <Typography variant="h6" sx={{ 
-                                                    position: 'absolute', 
-                                                    color: theme.palette.common.white 
+                                                <Typography variant="caption" sx={{
+                                                    position: 'absolute',
+                                                    color: theme.palette.common.white
                                                 }}>
                                                     {index + 1}
                                                 </Typography>
                                             </Box>
-                                            <TimelineConnector sx={{ 
-                                                flexGrow: 1, 
-                                                height: '1px', 
-                                                backgroundColor: theme.palette.grey[500], 
-                                                paddingLeft: 2, 
-                                                width: '95%' 
+                                            <TimelineConnector sx={{
+                                                flexGrow: 1,
+                                                height: '1px',
+                                                backgroundColor: theme.palette.grey[500],
+                                                paddingLeft: 2,
+                                                width: '95%'
                                             }} />
                                         </TimelineSeparator>
+                                    </TimelineItem>
+                                ))
+                            }
+                        </Timeline>
+                    </Box>
+                    <Box display={{ xs: 'flex', lg: 'none' }}>
+                        <Timeline position="right" sx={{
+                            [`& .${timelineItemClasses.root}:before`]: {
+                                flex: 0,
+                                padding: 0,
+                            },
+                            paddingX: 0,
+                        }}>
+                            {
+                                steps.map((step, index) => (
+                                    <TimelineItem>
+                                        <TimelineSeparator>
+                                            <TimelineDot />
+                                            <TimelineConnector />
+                                        </TimelineSeparator>
+                                        <TimelineContent>
+                                            <CustomCard padding={2} gradient={`linear-gradient(180deg, ${theme.palette.NexCardGradient2_2.main} 0%, ${theme.palette.background.default} 80%)`} shadow="0px 0px 0px rgba(0, 0, 0, 0.35)" border={`solid 2px ${theme.palette.NexGradientBorder1_2}`}>
+                                                <Stack gap={1} height={'100%'}>
+                                                    <Typography variant="h5" color={theme.palette.NexCardGradient1_2.main} sx={{ minHeight: '2rem' }}>{step.title}</Typography>
+                                                    <Typography variant="subtitle1">{step.description}</Typography>
+                                                </Stack>
+                                            </CustomCard>
+                                        </TimelineContent>
                                     </TimelineItem>
                                 ))
                             }

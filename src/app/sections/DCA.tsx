@@ -17,7 +17,7 @@ const DCA = () => {
     ];
 
     return (
-        <Stack width={'100%'} height={'100%'} paddingX={{ xs: 2, lg: 8 }} paddingBottom={8}>
+        <Stack width={'100%'} height={'100%'} paddingX={{ xs: 2, lg: 8 }} paddingBottom={8} paddingTop={{xs: 4, lg: 0}}>
             <CustomCard gradient={`linear-gradient(360deg, ${theme.palette.NexCardGradient1_1.main} 0%, ${theme.palette.background.default} 80%)`} shadow="0px 0px 0px rgba(0, 0, 0, 0.35)" border={`solid 2px ${theme.palette.background.default}`}>
                 <Stack direction={{ xs: 'column', lg: 'row' }} alignItems={'center'} paddingX={{ xs: 2, lg: 2 }}>
                     <Stack direction={'column'} width={{ xs: '100%', lg: '50%' }} height={'100%'}>
