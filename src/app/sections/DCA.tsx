@@ -23,7 +23,7 @@ const DCA = () => {
                     <Stack direction={'column'} width={{ xs: '100%', lg: '50%' }} height={'100%'}>
                         <Stack alignItems={'start'} justifyContent={'center'}>
                             <Stack alignItems={'start'} justifyContent={'center'} gap={2}>
-                                <Typography variant="h2">Elevate your trading experience</Typography>
+                                <Typography variant="h4">Nex Dollar Cost Average</Typography>
                                 <Stack direction={'column'} width={{ xs: '100%', lg: '100%' }} alignItems={'center'}>
                                     <Typography variant="subtitle1">Assess index performance through Dollar Cost Averaging (DCA) buying strategies and get a simulated real-world performance experience for those looking to invest recurrently.</Typography>
                                     <Typography variant="subtitle1">Our DCA tool is able to compare its performance against indices such as S&P500 and Nasdaq.</Typography>

@@ -5,12 +5,13 @@ interface CustomCardProps {
     border: string;
     shadow: string;
     children: React.ReactNode;
+    padding?: number;
 }
 
-const CustomCard: React.FC<CustomCardProps> = ({ gradient, border, shadow, children }) => {
+const CustomCard: React.FC<CustomCardProps> = ({ gradient, border, shadow, children, padding }) => {
     return (
-        <Stack width={'100%'} height={'100%'} border={border} boxShadow={shadow} borderRadius={"1rem"} padding={3} position={'relative'} overflow={'hidden'} sx={{
-            background: gradient
+        <Stack width={'100%'} height={'100%'} border={border} boxShadow={shadow} borderRadius={"1rem"} padding={padding ? padding : 3} position={'relative'} overflow={'hidden'} sx={{
+            background: gradient,
         }}>
             {children}
         </Stack>

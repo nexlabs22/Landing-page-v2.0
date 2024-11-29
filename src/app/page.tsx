@@ -21,12 +21,12 @@ export default function Home() {
           <HeroSection />
           <StatsSection />
           <BentoSection />
-          <DCA />
           <FeaturesSection />
           <BuildIndex />
           <PartnersSection />
           <FAQSection />
           <BlogSection />
+          <DCA />
           <AlternativeFooter1 />
         </Stack>
       </Container>

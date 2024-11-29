@@ -6,7 +6,7 @@ import { IoCheckmarkDoneOutline } from "react-icons/io5";
 
 const FeaturesSection = () => {
     return (
-        <Stack width={'100%'} alignItems={'center'} justifyContent={'start'} gap={{ xs: 3, lg: 4 }} paddingX={{ xs: 2, lg: 8 }}>
+        <Stack width={'100%'} alignItems={'center'} justifyContent={'start'} gap={{ xs: 3, lg: 4 }} paddingX={{ xs: 2, lg: 8 }} paddingY={{ xs: 4, lg: 4 }}>
             <Typography variant="h3">
                 Features
             </Typography>
