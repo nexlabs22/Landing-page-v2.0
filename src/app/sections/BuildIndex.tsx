@@ -308,7 +308,7 @@ const BuildIndex = () => {
                         }}>
                             {
                                 steps.map((step, index) => (
-                                    <TimelineItem key={index} sx={{
+                                    <TimelineItem key={step.title} sx={{
                                         display: 'flex',
                                         flexDirection: 'column',
                                         alignItems: 'center',
