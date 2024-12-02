@@ -23,7 +23,7 @@ const FeaturesSection = () => {
                                 <Stack gap={1.5}>
                                     <Stack direction={'row'} alignItems={'start'} gap={0.5}>
                                         <IoCheckmarkDoneOutline color={theme.palette.NexCardGradient1_2.main} size={24} />
-                                        <Typography variant="body1">Managged TradiFi & Crypto Assets</Typography>
+                                        <Typography variant="body1">Managed TradiFi & Crypto Assets</Typography>
                                     </Stack>
                                     <Stack direction={'row'} alignItems={'start'} gap={0.5}>
                                         <IoCheckmarkDoneOutline color={theme.palette.NexCardGradient1_2.main} size={24} />
