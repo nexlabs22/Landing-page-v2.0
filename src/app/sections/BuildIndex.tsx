@@ -24,7 +24,6 @@ const floatAnimation = keyframes`
 
 interface Step {
     title: string;
-    description?: string;
     details?: ReactNode;
 }
 
@@ -325,7 +324,6 @@ const BuildIndex = () => {
                                             <CustomCard padding={2} gradient={`linear-gradient(180deg, ${theme.palette.NexCardGradient2_2.main} 0%, ${theme.palette.background.default} 80%)`} shadow="0px 0px 0px rgba(0, 0, 0, 0.35)" border={`solid 2px ${theme.palette.NexGradientBorder1_2}`}>
                                                 <Stack gap={1} height={'100%'}>
                                                     <Typography variant="h5" color={theme.palette.NexCardGradient1_2.main} sx={{ minHeight: '2rem' }}>{step.title}</Typography>
-                                                    <Typography variant="subtitle1">{step.description}</Typography>
                                                     {step.details}
                                                 </Stack>
                                             </CustomCard>
@@ -391,7 +389,6 @@ const BuildIndex = () => {
                                             <CustomCard padding={2} gradient={`linear-gradient(180deg, ${theme.palette.NexCardGradient2_2.main} 0%, ${theme.palette.background.default} 80%)`} shadow="0px 0px 0px rgba(0, 0, 0, 0.35)" border={`solid 2px ${theme.palette.NexGradientBorder1_2}`}>
                                                 <Stack gap={1} height={'100%'}>
                                                     <Typography variant="h5" color={theme.palette.NexCardGradient1_2.main} sx={{ minHeight: '2rem' }}>{step.title}</Typography>
-                                                    <Typography variant="subtitle1">{step.description}</Typography>
                                                     {step.details}
                                                 </Stack>
                                             </CustomCard>
