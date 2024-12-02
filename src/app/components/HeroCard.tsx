@@ -39,7 +39,7 @@ const HeroCard = () => {
                 <Image src={shape1} alt="nex labs nexlabs shape loop 3D dark" height={400} width={400} style={{
                     position: 'absolute',
                     right: '-32%',
-                    bottom: '-24%',
+                    bottom: '-20%',
                     zIndex: 2
                 }} />
             </Stack>
@@ -47,7 +47,7 @@ const HeroCard = () => {
                 <Image src={shape1} alt="nex labs nexlabs shape loop 3D dark" height={550} width={550} style={{
                     position: 'absolute',
                     right: '-25%',
-                    bottom: '-20%',
+                    bottom: '-25%',
                     zIndex: 2
                 }} />
             </Stack>
