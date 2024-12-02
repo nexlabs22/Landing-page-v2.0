@@ -85,7 +85,7 @@ const IndicesSlider = () => {
                     width: '100%',
                     height: '100%',
                     paddingX: { xs: 0, lg: '20px 0' },
-                    borderRadius: '1.6rem',
+                    borderRadius: '1.2rem',
                 },
                 '& .react-multi-carousel-track': {
                     height: '100%'
