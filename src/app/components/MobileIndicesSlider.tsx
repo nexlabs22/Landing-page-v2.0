@@ -91,6 +91,8 @@ const MobileIndicesSlider = () => {
                 infinite={true}
                 containerClass="carousel-container"
                 itemClass="carousel-item"
+                autoPlay={true}
+                autoPlaySpeed={4000}
             >
                 {IndicesWithDetails.map((item: Index, key) => (
                     <Stack
