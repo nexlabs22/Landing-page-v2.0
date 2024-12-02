@@ -145,7 +145,7 @@ const BuildIndex = () => {
             <ListItem key="passive">
                 <ListItemText
                     primary="Passive"
-                    secondary='Seelct assets, then select weighting (mcap, equal weights, custom)'
+                    secondary='Select assets, then select weighting (mcap, equal weights, custom)'
                     sx={{
                         '& .MuiListItemText-primary': {
                             fontWeight: 600,
