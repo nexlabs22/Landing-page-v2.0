@@ -51,7 +51,7 @@ const HeroSection = () => {
                     {IndicesWithDetails.map((item: Index, index: number) => (
                         <Grid size={{xs: 12, lg: 6}} key={index}>
                             <Box display={'flex'} width={'100%'} height={'100%'} sx={{
-                                aspectRatio: '16 / 9'
+                                aspectRatio: '1.5 / 1'
                             }}>
                                 <ChartCard product={item} />
                             </Box>
