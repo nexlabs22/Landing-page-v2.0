@@ -14,7 +14,7 @@ import AlternativeFooter1 from "@sections/AlternativeFooter1";
 export default function Home() {
   return (
     <Box width={'100vw'} display={'flex'} flexDirection={'column'} alignItems={'center'} justifyContent={'start'} position={'relative'}>
-      <HeroBG />
+      {/* <HeroBG /> */}
       
       <Container maxWidth="xl">
         <Stack padding={{xs: 0, sm: 0, md: 4, lg: 2}}>
