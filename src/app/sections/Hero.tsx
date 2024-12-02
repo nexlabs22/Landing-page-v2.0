@@ -44,10 +44,10 @@ const HeroSection = () => {
             <HeroShadows />
             <Navbar />
             <Stack width={'100%'} height={{ xs: '100%', lg: '88%' }} position={'relative'} zIndex={3} marginX={'auto'} marginTop={{ xs: 4, lg: 2 }} padding={{ xs: 0, lg: 3 }} direction={{ xs: 'column', lg: 'row' }} alignItems={'stretch'} gap={{ xs: 1, lg: 2 }}>
-                <Box display={'flex'} width={{ xs: '100%', lg: '35%' }} height={{ xs: '70vh', lg: '100%' }}>
+                <Box display={'flex'} width={{ xs: '100%', lg: '35%' }} height={{ xs: '70vh', md: '80vh', lg: '100%' }}>
                     <HeroCard />
                 </Box>
-                <Grid display={{xs: 'none', md: 'flex'}} container rowSpacing={2} columnSpacing={2} width={{xs: '100%', lg: '65%'}} height={'100%'}>
+                <Grid display={{xs: 'none', lg: 'flex'}} container rowSpacing={2} columnSpacing={2} width={{xs: '100%', lg: '65%'}} height={'100%'}>
                     {IndicesWithDetails.map((item: Index, index: number) => (
                         <Grid size={{xs: 12, lg: 6}} key={index}>
                             <Box display={'flex'} width={'100%'} height={'100%'}>
