@@ -1,5 +1,5 @@
 'use client'
-import { Stack, Typography, Link, Button, keyframes, Box } from "@mui/material";
+import { Stack, Typography, Link, Button, keyframes, Box, ListItem, ListItemText, List } from "@mui/material";
 import Image from "next/image";
 import theme from "@theme/theme";
 import ConversionShadows from "@components/ConversionShadows";
@@ -14,6 +14,7 @@ import CustomCard from "@components/CustomCard";
 
 import DottedBackground from "@assets/smallDottedGreen.webp";
 import blocks from "@assets/blocks.webp";
+import { ReactNode } from "react";
 
 const floatAnimation = keyframes`
     0% { transform: translateY(0); }
@@ -23,28 +24,258 @@ const floatAnimation = keyframes`
 
 interface Step {
     title: string;
-    description: string;
+    description?: string;
+    details?: ReactNode;
 }
 
 const BuildIndex = () => {
 
     const steps: Step[] = [
         {
-            title: 'Select a smart-contract',
-            description: 'Choose a smart-contract from the list of available ones',
+            title: 'Select a smart contract',
+            details: <List dense disablePadding>
+                <ListItem key="defi">
+                    <ListItemText
+                        primary="DeFi"
+                        secondary='Basic single chain'
+                        sx={{
+                            '& .MuiListItemText-primary': {
+                                fontWeight: 600,
+                                display: 'flex',
+                                alignItems: 'center',
+                            },
+                            '& .MuiListItemText-primary:before': {
+                                content: '""',
+                                display: 'inline-block',
+                                width: '6px',
+                                height: '6px',
+                                borderRadius: '50%',
+                                marginRight: 0.5,
+                                backgroundColor: theme.palette.NexCardGradient1_2.main,
+                            },
+                            '& .MuiListItemText-secondary': {
+                                color: theme.palette.grey[500],
+                                marginLeft: 1.2
+                            }
+                        }}
+                    />
+                </ListItem>
+                <ListItem key="cross-chain">
+                    <ListItemText
+                        primary="Cross-hain"
+                        secondary='CCIP compatible assets'
+                        sx={{
+                            '& .MuiListItemText-primary': {
+                                fontWeight: 600,
+                                display: 'flex',
+                                alignItems: 'center',
+                            },
+                            '& .MuiListItemText-primary:before': {
+                                content: '""',
+                                display: 'inline-block',
+                                width: '6px',
+                                height: '6px',
+                                borderRadius: '50%',
+                                marginRight: 0.5,
+                                backgroundColor: theme.palette.NexCardGradient1_2.main,
+                            },
+                            '& .MuiListItemText-secondary': {
+                                color: theme.palette.grey[500],
+                                marginLeft: 1.2
+                            }
+                        }}
+                    />
+                </ListItem>
+                <ListItem key="stocks">
+                    <ListItemText
+                        primary="Stocks"
+                        secondary='Stocks, bonds, yield bearing, stables'
+                        sx={{
+                            '& .MuiListItemText-primary': {
+                                fontWeight: 600,
+                                display: 'flex',
+                                alignItems: 'center',
+                            },
+                            '& .MuiListItemText-primary:before': {
+                                content: '""',
+                                display: 'inline-block',
+                                width: '6px',
+                                height: '6px',
+                                borderRadius: '50%',
+                                marginRight: 0.5,
+                                backgroundColor: theme.palette.NexCardGradient1_2.main,
+                            },
+                            '& .MuiListItemText-secondary': {
+                                color: theme.palette.grey[500],
+                                marginLeft: 1.2
+                            }
+                        }}
+                    />
+                </ListItem>
+            </List>
         },
         {
-            title: 'Chose indices from the list',
-            description: 'Choose indices from the list of available ones',
+            title: 'Select a strategy',
+            details: <List dense disablePadding>
+            <ListItem key="active">
+                <ListItemText
+                    primary="Active"
+                    secondary='Select an asset pool, then select regression factors'
+                    sx={{
+                        '& .MuiListItemText-primary': {
+                            fontWeight: 600,
+                            display: 'flex',
+                            alignItems: 'center',
+                        },
+                        '& .MuiListItemText-primary:before': {
+                            content: '""',
+                            display: 'inline-block',
+                            width: '6px',
+                            height: '6px',
+                            borderRadius: '50%',
+                            marginRight: 0.5,
+                            backgroundColor: theme.palette.NexCardGradient1_2.main,
+                        },
+                        '& .MuiListItemText-secondary': {
+                            color: theme.palette.grey[500],
+                            marginLeft: 1.2
+                        }
+                    }}
+                />
+            </ListItem>
+            <ListItem key="passive">
+                <ListItemText
+                    primary="Passive"
+                    secondary='Seelct assets, then select weighting (mcap, equal weights, custom)'
+                    sx={{
+                        '& .MuiListItemText-primary': {
+                            fontWeight: 600,
+                            display: 'flex',
+                            alignItems: 'center',
+                        },
+                        '& .MuiListItemText-primary:before': {
+                            content: '""',
+                            display: 'inline-block',
+                            width: '6px',
+                            height: '6px',
+                            borderRadius: '50%',
+                            marginRight: 0.5,
+                            backgroundColor: theme.palette.NexCardGradient1_2.main,
+                        },
+                        '& .MuiListItemText-secondary': {
+                            color: theme.palette.grey[500],
+                            marginLeft: 1.2
+                        }
+                    }}
+                />
+            </ListItem>
+        </List>
         },
         {
             title: 'Define weights and fees',
-            description: 'Define weights and management fees',
+            details: <List dense disablePadding>
+            <ListItem key="auto-rebalance">
+                <ListItemText
+                    primary="Auto rebalance"
+                    sx={{
+                        '& .MuiListItemText-primary': {
+                            fontWeight: 600,
+                            display: 'flex',
+                            alignItems: 'center',
+                        },
+                        '& .MuiListItemText-primary:before': {
+                            content: '""',
+                            display: 'inline-block',
+                            width: '6px',
+                            height: '6px',
+                            borderRadius: '50%',
+                            marginRight: 0.5,
+                            backgroundColor: theme.palette.NexCardGradient1_2.main,
+                        },
+                    }}
+                />
+            </ListItem>
+            <ListItem key="dividend">
+                <ListItemText
+                    primary="Dividend"
+                    secondary='Dividend reinvestment or payout currency'
+                    sx={{
+                        '& .MuiListItemText-primary': {
+                            fontWeight: 600,
+                            display: 'flex',
+                            alignItems: 'center',
+                        },
+                        '& .MuiListItemText-primary:before': {
+                            content: '""',
+                            display: 'inline-block',
+                            width: '6px',
+                            height: '6px',
+                            borderRadius: '50%',
+                            marginRight: 0.5,
+                            backgroundColor: theme.palette.NexCardGradient1_2.main,
+                        },
+                        '& .MuiListItemText-secondary': {
+                            color: theme.palette.grey[500],
+                            marginLeft: 1.2
+                        }
+                    }}
+                />
+            </ListItem>
+            <ListItem key="management-fee">
+                <ListItemText
+                    primary="Management fee type and %"
+                    sx={{
+                        '& .MuiListItemText-root': {
+                            padding: '2px'
+                        },
+                        '& .MuiListItem-dense': {
+                            padding: 0
+                        },
+                        '& .MuiListItemText-primary': {
+                            fontWeight: 600,
+                            display: 'flex',
+                            alignItems: 'center',
+                        },
+                        '& .MuiListItemText-primary:before': {
+                            content: '""',
+                            display: 'inline-block',
+                            width: '6px',
+                            height: '6px',
+                            borderRadius: '50%',
+                            marginRight: 0.5,
+                            backgroundColor: theme.palette.NexCardGradient1_2.main,
+                        },
+                    }}
+                />
+            </ListItem>
+            <ListItem key="risk-management">
+                <ListItemText
+                    primary="Risk management"
+                    secondary='Max asset weight, max rebalance change, currency exposure'
+                    sx={{
+                        '& .MuiListItemText-primary': {
+                            fontWeight: 600,
+                            display: 'flex',
+                            alignItems: 'center',
+                        },
+                        '& .MuiListItemText-primary:before': {
+                            content: '""',
+                            display: 'inline-block',
+                            width: '6px',
+                            height: '6px',
+                            borderRadius: '50%',
+                            marginRight: 0.5,
+                            backgroundColor: theme.palette.NexCardGradient1_2.main,
+                        },
+                        '& .MuiListItemText-secondary': {
+                            color: theme.palette.grey[500],
+                            marginLeft: 1.2
+                        }
+                    }}
+                />
+            </ListItem>
+        </List>
         },
-        {
-            title: 'Publish your index on NEX',
-            description: 'Publish your index on NEX & make it tradable',
-        }
     ];
 
     return (
@@ -95,6 +326,7 @@ const BuildIndex = () => {
                                                 <Stack gap={1} height={'100%'}>
                                                     <Typography variant="h5" color={theme.palette.NexCardGradient1_2.main} sx={{ minHeight: '2rem' }}>{step.title}</Typography>
                                                     <Typography variant="subtitle1">{step.description}</Typography>
+                                                    {step.details}
                                                 </Stack>
                                             </CustomCard>
                                         </TimelineContent>
@@ -114,11 +346,15 @@ const BuildIndex = () => {
                                             }}>
                                                 <TimelineDot sx={{
                                                     backgroundColor: theme.palette.NexCardGradient1_2.main,
-                                                    position: 'relative'
+                                                    position: 'relative',
+                                                    width: '2rem',
+                                                    height: '2rem'
                                                 }} />
-                                                <Typography variant="caption" sx={{
+                                                <Typography variant="subtitle1" sx={{
                                                     position: 'absolute',
-                                                    color: theme.palette.common.white
+                                                    color: theme.palette.common.white,
+                                                    fontWeight: 600,
+                                                    padding: 0.5
                                                 }}>
                                                     {index + 1}
                                                 </Typography>

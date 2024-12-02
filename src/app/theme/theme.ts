@@ -231,6 +231,13 @@ typography: {
           }
         }
       },
+      MuiListItem: {
+        styleOverrides: {
+          root: {
+            padding: 0
+          }
+        }
+      }
   },
   
 });
