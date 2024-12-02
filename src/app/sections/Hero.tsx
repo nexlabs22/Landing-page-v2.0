@@ -40,7 +40,7 @@ const HeroSection = () => {
     };
 
     return (
-        <Box width={'100%'} height={{ xs: 'auto', md: '100vh'}} maxHeight={{xs: 'auto', md: '100vh', lg: '90vh', xl: '80vh', xxl: '70vh'}} position={'relative'}>
+        <Box width={'100%'} height={{ xs: 'auto', md: '100vh'}} maxHeight={{xs: 'auto', md: '100vh', xl: '90vh', xxl: '70vh'}} position={'relative'}>
             <HeroShadows />
             <Navbar />
             <Stack width={'100%'} height={{ xs: '100%', lg: '88%' }} position={'relative'} zIndex={3} marginX={'auto'} marginTop={{ xs: 4, lg: 2 }} padding={{ xs: 0, lg: 3 }} direction={{ xs: 'column', lg: 'row' }} alignItems={'stretch'} gap={{ xs: 1, lg: 2 }}>
