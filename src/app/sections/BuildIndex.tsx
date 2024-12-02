@@ -392,6 +392,7 @@ const BuildIndex = () => {
                                                 <Stack gap={1} height={'100%'}>
                                                     <Typography variant="h5" color={theme.palette.NexCardGradient1_2.main} sx={{ minHeight: '2rem' }}>{step.title}</Typography>
                                                     <Typography variant="subtitle1">{step.description}</Typography>
+                                                    {step.details}
                                                 </Stack>
                                             </CustomCard>
                                         </TimelineContent>
