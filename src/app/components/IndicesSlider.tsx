@@ -103,6 +103,8 @@ const IndicesSlider = () => {
                 infinite={true}
                 containerClass="carousel-container"
                 itemClass="carousel-item"
+                autoPlay={true}
+                autoPlaySpeed={3000}
             >
                 {IndicesWithDetails.map((item: Index, key) => (
                     <Stack
